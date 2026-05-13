@@ -55,7 +55,7 @@ export default function Header() {
                 <Search size={18} />
                 <span className="text-sm tracking-wider">Search</span>
               </button>
-              <a href="#" className="text-sm tracking-wider hover:underline">About</a>
+              <Link to="/about" className="text-sm tracking-wider hover:underline">About</Link>
             </div>
           </div>
         </div>
@@ -91,7 +91,7 @@ export default function Header() {
             <Link to="/rings" className="block py-2 text-sm tracking-wider">Rings</Link>
             <Link to="/earrings" className="block py-2 text-sm tracking-wider">Earrings</Link>
             <Link to="/bracelets" className="block py-2 text-sm tracking-wider">Bracelets</Link>
-            <a href="#" className="block py-2 text-sm tracking-wider">About</a>
+            <Link to="/about" className="block py-2 text-sm tracking-wider">About</Link>
           </nav>
         )}
       </header>

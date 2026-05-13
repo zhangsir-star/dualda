@@ -4,6 +4,7 @@ import RingsPage from './pages/RingsPage'
 import EarringsPage from './pages/EarringsPage'
 import BraceletsPage from './pages/BraceletsPage'
 import NecklacesPage from './pages/NecklacesPage'
+import AboutPage from './pages/AboutPage'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/earrings" element={<EarringsPage />} />
         <Route path="/bracelets" element={<BraceletsPage />} />
         <Route path="/necklaces" element={<NecklacesPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>
   )
