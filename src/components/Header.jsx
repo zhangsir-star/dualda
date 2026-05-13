@@ -35,18 +35,16 @@ export default function Header() {
           <div className="flex items-center justify-between px-12 py-4">
             {/* Left: Navigation */}
             <nav className="flex items-center gap-8 text-sm tracking-wider">
-              <Link to="/necklaces" className="hover:underline">Necklaces</Link>
-              <Link to="/rings" className="hover:underline">Rings</Link>
-              <Link to="/earrings" className="hover:underline">Earrings</Link>
-              <Link to="/bracelets" className="hover:underline">Bracelets</Link>
+              <a href="/necklaces" className="hover:underline">Necklaces</a>
+              <a href="/rings" className="hover:underline">Rings</a>
+              <a href="/earrings" className="hover:underline">Earrings</a>
+              <a href="/bracelets" className="hover:underline">Bracelets</a>
             </nav>
 
-            {/* Center: Logo */}
-            <Link to="/" className="absolute left-1/2 -translate-x-1/2 text-2xl font-serif tracking-wider text-brown-900">
+            <a href="/" className="absolute left-1/2 -translate-x-1/2 text-2xl font-serif tracking-wider text-brown-900">
               ALDA
-            </Link>
+            </a>
 
-            {/* Right: Search + About */}
             <div className="flex items-center gap-6">
               <button 
                 onClick={() => setSearchOpen(true)}
@@ -55,7 +53,7 @@ export default function Header() {
                 <Search size={18} />
                 <span className="text-sm tracking-wider">Search</span>
               </button>
-              <Link to="/about" className="text-sm tracking-wider hover:underline">About</Link>
+              <a href="/about" className="text-sm tracking-wider hover:underline">About</a>
             </div>
           </div>
         </div>
@@ -70,9 +68,9 @@ export default function Header() {
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
 
-            <Link to="/" className="text-xl font-serif tracking-wider text-brown-900">
+            <a href="/" className="text-xl font-serif tracking-wider text-brown-900">
               ALDA
-            </Link>
+            </a>
 
             <button 
               onClick={() => setSearchOpen(true)}
@@ -87,11 +85,11 @@ export default function Header() {
         {/* Mobile Menu */}
         {menuOpen && (
           <nav className="md:hidden bg-cream border-t border-brown-200 px-6 py-4 space-y-3">
-            <Link to="/necklaces" className="block py-2 text-sm tracking-wider">Necklaces</Link>
-            <Link to="/rings" className="block py-2 text-sm tracking-wider">Rings</Link>
-            <Link to="/earrings" className="block py-2 text-sm tracking-wider">Earrings</Link>
-            <Link to="/bracelets" className="block py-2 text-sm tracking-wider">Bracelets</Link>
-            <Link to="/about" className="block py-2 text-sm tracking-wider">About</Link>
+            <a href="/necklaces" className="block py-2 text-sm tracking-wider">Necklaces</a>
+            <a href="/rings" className="block py-2 text-sm tracking-wider">Rings</a>
+            <a href="/earrings" className="block py-2 text-sm tracking-wider">Earrings</a>
+            <a href="/bracelets" className="block py-2 text-sm tracking-wider">Bracelets</a>
+            <a href="/about" className="block py-2 text-sm tracking-wider">About</a>
           </nav>
         )}
       </header>

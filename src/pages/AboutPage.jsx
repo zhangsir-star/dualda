@@ -1,6 +1,6 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { MapPin, Clock, Mail, Phone, Calendar } from 'lucide-react'
+import { Clock, Mail, Phone } from 'lucide-react'
 
 export default function AboutPage() {
   return (
@@ -37,7 +37,7 @@ export default function AboutPage() {
           </div>
           <div className="aspect-[4/5] bg-brown-200 rounded-sm overflow-hidden">
             <img 
-              src="https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51260.webp" 
+              src="https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/52013.webp" 
               alt="Alda craftsmanship" 
               className="w-full h-full object-cover"
             />
@@ -77,72 +77,52 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           <h2 className="heading-serif text-3xl md:text-4xl text-brown-900 mb-12 text-center">Visit Us</h2>
           <div className="grid md:grid-cols-2 gap-12 md:gap-16">
-            {/* Location & Hours */}
+            {/* Location & Hours + Auto-scroll images */}
             <div className="space-y-8">
               <div>
                 <h3 className="text-sm tracking-wider uppercase text-gold-500 mb-3 font-medium">Location</h3>
                 <p className="text-brown-800 text-lg">
-                  8463 Melrose Place<br />
-                  Los Angeles, CA 90069
+                  Henan High-Tech Industrial Development Zone<br />
+                  Zhengzhou, China
                 </p>
               </div>
               <div>
                 <h3 className="text-sm tracking-wider uppercase text-gold-500 mb-3 font-medium">Opening Hours</h3>
                 <p className="text-brown-800 text-lg">
-                  Tuesday – Saturday<br />
-                  10:00 AM – 6:00 PM
+                  Monday – Friday<br />
+                  9:00 AM – 6:00 PM
                 </p>
               </div>
-              <div>
-                <h3 className="text-sm tracking-wider uppercase text-gold-500 mb-3 font-medium">Contact</h3>
-                <div className="space-y-2 text-brown-800">
-                  <p>Email: <a href="mailto:info@alda-jewelry.com" className="underline hover:text-brown-600">info@alda-jewelry.com</a></p>
-                  <p>Call or WhatsApp: <a href="tel:+13107392129" className="underline hover:text-brown-600">+1 (310) 739-2129</a></p>
+              <div className="overflow-hidden mt-8">
+                <div className="flex gap-4 animate-scroll">
+                  {[
+                    'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51403.webp',
+                    'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51401.webp',
+                    'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51401.webp',
+                  ].concat([
+                    'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51403.webp',
+                    'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51401.webp',
+                    'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51401.webp',
+                  ]).map((src, index) => (
+                    <img
+                      key={index}
+                      src={src}
+                      alt={`Gallery ${index}`}
+                      className="w-48 h-36 object-cover rounded-sm shrink-0"
+                    />
+                  ))}
                 </div>
               </div>
-              <a 
-                href="https://maps.app.goo.gl/U6JPpGT74gt7K6K97" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-brown-900 text-white text-sm font-medium tracking-wider uppercase hover:bg-brown-700 transition-colors"
-              >
-                <MapPin size={16} />
-                View on Map
-              </a>
             </div>
 
-            {/* Booking CTA */}
-            <div className="space-y-8">
-              <div className="bg-brown-100 p-8 md:p-10">
-                <h3 className="heading-serif text-2xl text-brown-900 mb-3">Book an Appointment</h3>
-                <p className="text-brown-600 text-sm mb-6 leading-relaxed">
-                  Experience our collection in person. Book a private consultation with our jewelry experts.
-                </p>
-                <a 
-                  href="https://meetings-eu1.hubspot.com/la-store/bridal-consultation" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 text-white text-sm font-medium tracking-wider uppercase hover:bg-gold-600 transition-colors"
-                >
-                  <Calendar size={16} />
-                  Book Now
-                </a>
-              </div>
-              <div className="bg-brown-100 p-8 md:p-10">
-                <h3 className="heading-serif text-2xl text-brown-900 mb-3">Wedding Band Consultation</h3>
-                <p className="text-brown-600 text-sm mb-6 leading-relaxed">
-                  Find the perfect rings for your special day. Book a 30-minute in-store appointment.
-                </p>
-                <a 
-                  href="https://meetings-eu1.hubspot.com/la-store/weddingbands-la-store" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-brown-900 text-white text-sm font-medium tracking-wider uppercase hover:bg-brown-700 transition-colors"
-                >
-                  <Calendar size={16} />
-                  Book Consultation
-                </a>
-              </div>
+            {/* Booking CTA - Image */}
+            <div>
+              <img 
+                src="https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/52030.webp" 
+                alt="Alda Store" 
+                className="w-full object-cover rounded-sm"
+                style={{ maxHeight: '420px' }}
+              />
             </div>
           </div>
         </div>

@@ -1,5 +1,4 @@
 import { Instagram, Facebook, Twitter } from 'lucide-react'
-import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -45,10 +44,10 @@ export default function Footer() {
         <div>
           <h4 className="text-sm tracking-wider uppercase mb-4 text-gold-400">Shop</h4>
           <ul className="space-y-2 text-sm text-cream/70">
-            <li><Link to="/necklaces" className="hover:text-cream transition-colors">Necklaces</Link></li>
-            <li><Link to="/rings" className="hover:text-cream transition-colors">Rings</Link></li>
-            <li><Link to="/earrings" className="hover:text-cream transition-colors">Earrings</Link></li>
-            <li><Link to="/bracelets" className="hover:text-cream transition-colors">Bracelets</Link></li>
+            <li><a href="/necklaces" className="hover:text-cream transition-colors">Necklaces</a></li>
+            <li><a href="/rings" className="hover:text-cream transition-colors">Rings</a></li>
+            <li><a href="/earrings" className="hover:text-cream transition-colors">Earrings</a></li>
+            <li><a href="/bracelets" className="hover:text-cream transition-colors">Bracelets</a></li>
           </ul>
         </div>
 
@@ -56,7 +55,7 @@ export default function Footer() {
         <div>
           <h4 className="text-sm tracking-wider uppercase mb-4 text-gold-400">Company</h4>
           <ul className="space-y-2 text-sm text-cream/70">
-            <li><a href="#" className="hover:text-cream transition-colors">Our Story</a></li>
+            <li><a href="/about" className="hover:text-cream transition-colors">Our Story</a></li>
           </ul>
         </div>
       </div>
