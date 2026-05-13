@@ -91,12 +91,13 @@ export const earrings = [
 ]
 
 export const necklaces = [
-  { id: 'necklace-01', title: 'Solitaire Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51260.webp' },
-  { id: 'necklace-02', title: 'Diamond Bar Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51261.webp' },
-  { id: 'necklace-03', title: 'Tennis Chain Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51265.webp' },
-  { id: 'necklace-04', title: 'Pear Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51262.webp' },
-  { id: 'necklace-05', title: 'Layered Chain Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51264.webp' },
-  { id: 'necklace-06', title: 'Heart Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51263.webp' }
+  { id: 'necklace-01', title: 'Solitaire Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51249.webp' },
+  { id: 'necklace-02', title: 'Diamond Bar Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51250.webp' },
+  { id: 'necklace-03', title: 'Tennis Chain Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51251.webp' },
+  { id: 'necklace-04', title: 'Pear Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51252.webp' },
+  { id: 'necklace-05', title: 'Layered Chain Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51253.webp' },
+  { id: 'necklace-06', title: 'Heart Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51254.webp' },
+  { id: 'necklace-07', title: 'Station Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51255.webp' }
 ]
 
 export const bracelets = [
