@@ -1,9 +1,7 @@
 import ProductCard from '../components/ProductCard'
-import { bestSellers } from '../data'
+import { rings } from '../data'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-
-const rings = bestSellers.filter((_, i) => [1, 3, 4, 5].includes(i))
 
 export default function RingsPage() {
   return (
