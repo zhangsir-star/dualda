@@ -79,6 +79,17 @@ export const rings = [
   { id: 'ring-24', title: 'Cathedral Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51222.webp' }
 ]
 
+export const necklaces = [
+  { id: 'necklace-01', title: 'Solitaire Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51233.webp' },
+  { id: 'necklace-02', title: 'Diamond Bar Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51234.webp' },
+  { id: 'necklace-03', title: 'Tennis Chain Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51236.webp' },
+  { id: 'necklace-04', title: 'Pear Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51235.webp' },
+  { id: 'necklace-05', title: 'Layered Chain Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51237.webp' },
+  { id: 'necklace-06', title: 'Heart Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51239.webp' },
+  { id: 'necklace-07', title: 'Station Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51240.webp' },
+  { id: 'necklace-08', title: 'Halo Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51238.webp' }
+]
+
 export const testimonials = [
   {
     id: 1,

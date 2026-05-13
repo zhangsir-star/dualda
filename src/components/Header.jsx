@@ -35,7 +35,7 @@ export default function Header() {
           <div className="flex items-center justify-between px-12 py-4">
             {/* Left: Navigation */}
             <nav className="flex items-center gap-8 text-sm tracking-wider">
-              <a href="#" className="hover:underline">Necklaces</a>
+              <Link to="/necklaces" className="hover:underline">Necklaces</Link>
               <Link to="/rings" className="hover:underline">Rings</Link>
               <a href="#" className="hover:underline">Earrings</a>
               <a href="#" className="hover:underline">Bracelets</a>
@@ -87,7 +87,7 @@ export default function Header() {
         {/* Mobile Menu */}
         {menuOpen && (
           <nav className="md:hidden bg-cream border-t border-brown-200 px-6 py-4 space-y-3">
-            <a href="#" className="block py-2 text-sm tracking-wider">Necklaces</a>
+            <Link to="/necklaces" className="block py-2 text-sm tracking-wider">Necklaces</Link>
             <Link to="/rings" className="block py-2 text-sm tracking-wider">Rings</Link>
             <a href="#" className="block py-2 text-sm tracking-wider">Earrings</a>
             <a href="#" className="block py-2 text-sm tracking-wider">Bracelets</a>
