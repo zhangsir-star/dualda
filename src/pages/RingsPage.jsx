@@ -11,7 +11,7 @@ export default function RingsPage() {
       <section className="bg-gradient-to-b from-cream-dark to-cream pt-24 pb-16 md:pt-32 md:pb-24 px-6 md:px-12 lg:px-24">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="heading-serif text-4xl md:text-6xl lg:text-7xl text-brown-900 leading-tight mb-4">
-            Rings
+            Ring Collection
           </h1>
           <p className="text-lg md:text-xl text-brown-600 font-light max-w-2xl mx-auto">
             Discover our curated collection of lab-grown diamond rings — designed to celebrate life's most meaningful moments.

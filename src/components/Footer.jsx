@@ -1,4 +1,5 @@
 import { Instagram, Facebook, Twitter } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -45,7 +46,7 @@ export default function Footer() {
           <h4 className="text-sm tracking-wider uppercase mb-4 text-gold-400">Shop</h4>
           <ul className="space-y-2 text-sm text-cream/70">
             <li><a href="#" className="hover:text-cream transition-colors">Necklaces</a></li>
-            <li><a href="#" className="hover:text-cream transition-colors">Rings</a></li>
+            <li><Link to="/rings" className="hover:text-cream transition-colors">Rings</Link></li>
             <li><a href="#" className="hover:text-cream transition-colors">Earrings</a></li>
             <li><a href="#" className="hover:text-cream transition-colors">Bracelets</a></li>
           </ul>
