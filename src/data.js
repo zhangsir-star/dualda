@@ -53,42 +53,17 @@ export const bestSellers = [
 ]
 
 export const rings = [
-  { id: 'ring-01', title: 'Solitaire Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51201.webp' },
-  { id: 'ring-02', title: 'Eternity Band Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51202.webp' },
-  { id: 'ring-03', title: 'Pavé Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51203.webp' },
-  { id: 'ring-04', title: 'Halo Engagement Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51204.webp' },
-  { id: 'ring-05', title: 'Vintage Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51205.webp' },
-  { id: 'ring-06', title: 'Three Stone Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51206.webp' },
-  { id: 'ring-07', title: 'Pear Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51207.webp' },
-  { id: 'ring-08', title: 'Oval Cut Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51208.webp' },
-  { id: 'ring-09', title: 'Cushion Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51209.webp' },
-  { id: 'ring-10', title: 'Emerald Cut Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51210.webp' },
-  { id: 'ring-11', title: 'Marquise Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51211.webp' },
-  { id: 'ring-12', title: 'Princess Cut Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51212.webp' },
-  { id: 'ring-13', title: 'Radiant Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51214.webp' },
-  { id: 'ring-14', title: 'Asscher Cut Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51213.webp' },
-  { id: 'ring-15', title: 'Heart Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51215.webp' },
-  { id: 'ring-16', title: 'Twisted Band Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51216.webp' },
-  { id: 'ring-17', title: 'Channel Set Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51217.webp' },
-  { id: 'ring-18', title: 'Split Shank Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51218.webp' },
-  { id: 'ring-19', title: 'Bezel Set Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51219.webp' },
-  { id: 'ring-20', title: 'Tension Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51220.webp' },
-  { id: 'ring-21', title: 'Baguette Side Stone Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51221.webp' },
-  { id: 'ring-22', title: 'Flush Set Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51223.webp' },
-  { id: 'ring-23', title: 'Cluster Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51224.webp' },
-  { id: 'ring-24', title: 'Cathedral Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51222.webp' }
+  { id: 'ring-01', title: 'Solitaire Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51233.webp' },
+  { id: 'ring-02', title: 'Eternity Band Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51234.webp' },
+  { id: 'ring-03', title: 'Pavé Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51236.webp' },
+  { id: 'ring-04', title: 'Halo Engagement Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51235.webp' },
+  { id: 'ring-05', title: 'Vintage Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51237.webp' },
+  { id: 'ring-06', title: 'Three Stone Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51239.webp' },
+  { id: 'ring-07', title: 'Pear Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51240.webp' },
+  { id: 'ring-08', title: 'Oval Cut Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51238.webp' }
 ]
 
-export const necklaces = [
-  { id: 'necklace-01', title: 'Solitaire Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51233.webp' },
-  { id: 'necklace-02', title: 'Diamond Bar Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51234.webp' },
-  { id: 'necklace-03', title: 'Tennis Chain Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51236.webp' },
-  { id: 'necklace-04', title: 'Pear Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51235.webp' },
-  { id: 'necklace-05', title: 'Layered Chain Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51237.webp' },
-  { id: 'necklace-06', title: 'Heart Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51239.webp' },
-  { id: 'necklace-07', title: 'Station Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51240.webp' },
-  { id: 'necklace-08', title: 'Halo Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51238.webp' }
-]
+export const necklaces = []
 
 export const testimonials = [
   {
