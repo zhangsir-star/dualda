@@ -75,8 +75,7 @@ export const rings = [
   { id: 'ring-20', title: 'Tension Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51220.webp' },
   { id: 'ring-21', title: 'Baguette Side Stone Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51221.webp' },
   { id: 'ring-22', title: 'Flush Set Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51223.webp' },
-  { id: 'ring-23', title: 'Cluster Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51224.webp' },
-  { id: 'ring-24', title: 'Cathedral Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51222.webp' }
+  { id: 'ring-23', title: 'Cluster Diamond Ring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51224.webp' }
 ]
 
 export const testimonials = [
