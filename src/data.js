@@ -90,6 +90,15 @@ export const earrings = [
   { id: 'earring-08', title: 'Oval Cut Earring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51238.webp' }
 ]
 
+export const necklaces = [
+  { id: 'necklace-01', title: 'Solitaire Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51260.webp' },
+  { id: 'necklace-02', title: 'Diamond Bar Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51261.webp' },
+  { id: 'necklace-03', title: 'Tennis Chain Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51265.webp' },
+  { id: 'necklace-04', title: 'Pear Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51262.webp' },
+  { id: 'necklace-05', title: 'Layered Chain Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51264.webp' },
+  { id: 'necklace-06', title: 'Heart Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51263.webp' }
+]
+
 export const bracelets = [
   { id: 'bracelet-01', title: 'Solitaire Diamond Bracelet', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51241.webp' },
   { id: 'bracelet-02', title: 'Eternity Band Bracelet', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51242.webp' },
