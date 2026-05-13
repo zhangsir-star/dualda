@@ -1,5 +1,6 @@
 import { Menu, X, Search } from 'lucide-react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -35,15 +36,15 @@ export default function Header() {
             {/* Left: Navigation */}
             <nav className="flex items-center gap-8 text-sm tracking-wider">
               <a href="#" className="hover:underline">Necklaces</a>
-              <a href="#" className="hover:underline">Rings</a>
+              <Link to="/rings" className="hover:underline">Rings</Link>
               <a href="#" className="hover:underline">Earrings</a>
               <a href="#" className="hover:underline">Bracelets</a>
             </nav>
 
             {/* Center: Logo */}
-            <a href="/" className="absolute left-1/2 -translate-x-1/2 text-2xl font-serif tracking-wider text-brown-900">
+            <Link to="/" className="absolute left-1/2 -translate-x-1/2 text-2xl font-serif tracking-wider text-brown-900">
               ALDA
-            </a>
+            </Link>
 
             {/* Right: Search + About */}
             <div className="flex items-center gap-6">
@@ -69,9 +70,9 @@ export default function Header() {
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
 
-            <a href="/" className="text-xl font-serif tracking-wider text-brown-900">
+            <Link to="/" className="text-xl font-serif tracking-wider text-brown-900">
               ALDA
-            </a>
+            </Link>
 
             <button 
               onClick={() => setSearchOpen(true)}
@@ -87,7 +88,7 @@ export default function Header() {
         {menuOpen && (
           <nav className="md:hidden bg-cream border-t border-brown-200 px-6 py-4 space-y-3">
             <a href="#" className="block py-2 text-sm tracking-wider">Necklaces</a>
-            <a href="#" className="block py-2 text-sm tracking-wider">Rings</a>
+            <Link to="/rings" className="block py-2 text-sm tracking-wider">Rings</Link>
             <a href="#" className="block py-2 text-sm tracking-wider">Earrings</a>
             <a href="#" className="block py-2 text-sm tracking-wider">Bracelets</a>
             <a href="#" className="block py-2 text-sm tracking-wider">About</a>

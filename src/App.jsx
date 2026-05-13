@@ -1,20 +1,15 @@
-import Header from './components/Header'
-import HeroSection from './components/HeroSection'
-import ProductGrid from './components/ProductGrid'
-import Testimonials from './components/Testimonials'
-import Footer from './components/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import RingsPage from './pages/RingsPage'
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
-        <HeroSection />
-        <ProductGrid />
-        <Testimonials />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/rings" element={<RingsPage />} />
+      </Routes>
+    </Router>
   )
 }
 
