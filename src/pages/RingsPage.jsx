@@ -21,19 +21,6 @@ export default function RingsPage() {
         </div>
       </section>
 
-      {/* Banner Image */}
-      <section className="px-6 md:px-12 lg:px-24 -mt-8 mb-12">
-        <div className="max-w-6xl mx-auto">
-          <div className="w-full aspect-[16/9] md:aspect-[21/9] bg-brown-200 rounded-sm overflow-hidden">
-            <img 
-              src="https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51260.webp"
-              alt="Rings collection"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* Products Grid */}
       <section className="px-6 md:px-12 lg:px-24 pb-16 md:pb-24">
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
