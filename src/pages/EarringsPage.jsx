@@ -1,26 +1,26 @@
 import ProductCard from '../components/ProductCard'
-import { necklaces } from '../data'
+import { earrings } from '../data'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-export default function NecklacesPage() {
+export default function EarringsPage() {
   return (
     <div className="min-h-screen bg-cream">
       <Header />
       <section className="bg-gradient-to-b from-cream-dark to-cream pt-24 pb-16 md:pt-32 md:pb-24 px-6 md:px-12 lg:px-24">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="heading-serif text-4xl md:text-6xl lg:text-7xl text-brown-900 leading-tight mb-4">
-            Necklace Collection
+            Earring Collection
           </h1>
           <p className="text-lg md:text-xl text-brown-600 font-light max-w-2xl mx-auto">
-            Discover our curated collection of lab-grown diamond necklaces — designed to celebrate life's most meaningful moments.
+            Discover our curated collection of lab-grown diamond earrings — designed to celebrate life's most meaningful moments.
           </p>
         </div>
       </section>
 
       <section className="px-6 md:px-12 lg:px-24 pb-16 md:pb-24">
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-          {necklaces.map(product => (
+          {earrings.map(product => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
