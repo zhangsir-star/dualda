@@ -48,7 +48,7 @@ export default function Footer() {
             <li><Link to="/earrings" className="hover:text-cream transition-colors">Earrings</Link></li>
             <li><Link to="/rings" className="hover:text-cream transition-colors">Rings</Link></li>
             <li><a href="#" className="hover:text-cream transition-colors">Necklaces</a></li>
-            <li><a href="#" className="hover:text-cream transition-colors">Bracelets</a></li>
+            <li><Link to="/bracelets" className="hover:text-cream transition-colors">Bracelets</Link></li>
           </ul>
         </div>
 

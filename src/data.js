@@ -90,6 +90,17 @@ export const earrings = [
   { id: 'earring-08', title: 'Oval Cut Earring', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51238.webp' }
 ]
 
+export const bracelets = [
+  { id: 'bracelet-01', title: 'Solitaire Diamond Bracelet', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51241.webp' },
+  { id: 'bracelet-02', title: 'Eternity Band Bracelet', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51242.webp' },
+  { id: 'bracelet-03', title: 'Pavé Diamond Bracelet', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51243.webp' },
+  { id: 'bracelet-04', title: 'Halo Engagement Bracelet', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51244.webp' },
+  { id: 'bracelet-05', title: 'Vintage Diamond Bracelet', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51245.webp' },
+  { id: 'bracelet-06', title: 'Three Stone Bracelet', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51246.webp' },
+  { id: 'bracelet-07', title: 'Pear Diamond Bracelet', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51247.webp' },
+  { id: 'bracelet-08', title: 'Oval Cut Bracelet', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51248.webp' }
+]
+
 export const testimonials = [
   {
     id: 1,

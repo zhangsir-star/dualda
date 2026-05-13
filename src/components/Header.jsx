@@ -38,7 +38,7 @@ export default function Header() {
               <a href="#" className="hover:underline">Necklaces</a>
               <Link to="/rings" className="hover:underline">Rings</Link>
               <Link to="/earrings" className="hover:underline">Earrings</Link>
-              <a href="#" className="hover:underline">Bracelets</a>
+              <Link to="/bracelets" className="hover:underline">Bracelets</Link>
             </nav>
 
             {/* Center: Logo */}
@@ -90,7 +90,7 @@ export default function Header() {
             <a href="#" className="block py-2 text-sm tracking-wider">Necklaces</a>
             <Link to="/rings" className="block py-2 text-sm tracking-wider">Rings</Link>
             <Link to="/earrings" className="block py-2 text-sm tracking-wider">Earrings</Link>
-            <a href="#" className="block py-2 text-sm tracking-wider">Bracelets</a>
+            <Link to="/bracelets" className="block py-2 text-sm tracking-wider">Bracelets</Link>
             <a href="#" className="block py-2 text-sm tracking-wider">About</a>
           </nav>
         )}
