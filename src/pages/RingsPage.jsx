@@ -1,8 +1,7 @@
-import ProductCard from './ProductCard'
+import ProductCard from '../components/ProductCard'
 import { bestSellers } from '../data'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { Link } from 'react-router-dom'
 
 const rings = bestSellers.filter((_, i) => [1, 3, 4, 5].includes(i))
 
