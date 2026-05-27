@@ -1,0 +1,200 @@
+{
+  "site": {
+    "title": "Alda Schmuckmanufaktur",
+    "brand": "ALDA"
+  },
+  "nav": {
+    "necklaces": "Halsketten",
+    "rings": "Ringe",
+    "earrings": "Ohrringe",
+    "bracelets": "Armbänder",
+    "about": "About",
+    "manufacturingCapabilities": "Inside Alda Jewelry"
+  },
+  "language": {
+    "english": "Englisch"
+  },
+  "hero": {
+    "imageAlt": "Ring mit im Labor gezüchtetem Diamanten",
+    "title": "Primärquelle für im Labor gezüchtete Diamanten",
+    "subtitle": "Premium-Direktquelle",
+    "description": "Vollständige Individualisierung, jede Kreation möglich",
+    "cta": "PRODUCT"
+  },
+  "home": {
+    "styledOnModel": "Am Model getragen",
+    "testimonialsTitle": "Anerkennung von unzähligen Maßanfertigungs-Kunden"
+  },
+  "collection": {
+    "rings": {
+      "title": "Ringkollektion",
+      "description": "Entdecken Sie unsere kuratierte Kollektion von Ringen mit im Labor gezüchteten Diamanten — entworfen, um die bedeutungsvollsten Momente des Lebens zu feiern."
+    },
+    "earrings": {
+      "title": "Ohrringkollektion",
+      "description": "Entdecken Sie unsere kuratierte Kollektion von Ohrringen mit im Labor gezüchteten Diamanten — entworfen, um die bedeutungsvollsten Momente des Lebens zu feiern."
+    },
+    "bracelets": {
+      "title": "Armbandkollektion",
+      "description": "Entdecken Sie unsere kuratierte Kollektion von Armbändern mit im Labor gezüchteten Diamanten — entworfen, um die bedeutungsvollsten Momente des Lebens zu feiern."
+    },
+    "necklaces": {
+      "title": "Halskettenkollektion",
+      "description": "Entdecken Sie unsere kuratierte Kollektion von Halsketten mit im Labor gezüchteten Diamanten — entworfen, um die bedeutungsvollsten Momente des Lebens zu feiern."
+    }
+  },
+  "product": {
+    "title": "Produktkollektion",
+    "description": "Unser Engagement gilt der Bereitstellung hochwertiger Produkte und Dienstleistungen sowie dem gemeinsamen Wachstum von Anteilseignern, Kunden, Mitarbeitenden und Partnern.",
+    "tabs": {
+      "rough": "LABORGEZÜCHTETER DIAMANTROHLING",
+      "loose": "LABORGEZÜCHTETER LOSER DIAMANT",
+      "earrings": "OHRRINGE",
+      "rings": "RINGE",
+      "necklace": "HALSKETTE",
+      "bracelets": "ARMBÄNDER"
+    },
+    "rough": {
+      "llbTitle": "Größentabelle für LLB-Serie Diamantrohlinge",
+      "llsTitle": "Größentabelle für LLS-Serie Diamantrohlinge",
+      "gradeCarats": "Grad/Karat",
+      "gradeSize": "Grad/Größe mm"
+    },
+    "badge": {
+      "limitedNew": "LIMITIERTE NEUHEIT",
+      "popularPick": "BELIEBTE WAHL"
+    }
+  },
+  "cta": {
+    "email": "sales@aldajewelry.com",
+    "emailDescription": "For more product catalogs, please contact us by email."
+  },
+  "footer": {
+    "communityTitle": "Treten Sie der Alda Community bei",
+    "communityDescription": "Melden Sie sich für frühzeitigen Zugang zu neuen Kollektionen, exklusiven Angeboten und Styling-Inspirationen an.",
+    "emailPlaceholder": "Ihre E-Mail-Adresse",
+    "subscribe": "Abonnieren",
+    "catalog": "KATALOG",
+    "company": "Unternehmen",
+    "ourStory": "Unsere Geschichte",
+    "copyright": "© 2018 Alda. Alle Rechte vorbehalten.",
+    "popupSuccess": "Sie wurden abonniert",
+    "popupInvalid": "Bitte geben Sie Ihre E-Mail erneut ein"
+  },
+  "about": {
+    "storyTitle": "Unsere Geschichte",
+    "story1": "Alda wurde aus einer einfachen Überzeugung heraus gegründet: Luxusschmuck sollte schön, verantwortungsvoll hergestellt und zugänglich sein. Wir kreieren Stücke, die Tradition würdigen und zugleich Innovation leben.",
+    "story2": "Jedes Stück wird in unserer Werkstatt von Hand gefertigt, mit ethisch bezogenen, im Labor gezüchteten Diamanten und recycelten Edelmetallen. Unsere Kunsthandwerker bringen jahrzehntelange Erfahrung in jede Kreation ein und sichern makellose Qualität bis ins Detail.",
+    "story3": "Von der ersten Skizze bis zur finalen Politur sind wir stolz darauf, Schmuck zu schaffen, der eine Geschichte erzählt — Ihre Geschichte.",
+    "craftsmanshipAlt": "Alda Handwerkskunst",
+    "valuesTitle": "Unsere Werte",
+    "sustainabilityTitle": "Nachhaltigkeit",
+    "sustainabilityDescription": "Im Labor gezüchtete Diamanten verbrauchen 95 % weniger Wasser und verursachen 80 % weniger Kohlenstoffemissionen als abgebaute Diamanten.",
+    "craftsmanshipTitle": "Handwerkskunst",
+    "craftsmanshipDescription": "Jedes Stück wird von erfahrenen Kunsthandwerkern mit jahrzehntelanger Erfahrung in der feinen Schmuckherstellung von Hand gefertigt.",
+    "transparencyTitle": "Transparenz",
+    "transparencyDescription": "Wir glauben an ehrliche Preise und vollständige Offenlegung von Materialien und Prozessen.",
+    "visitTitle": "Besuchen Sie uns",
+    "locationTitle": "Standort",
+    "locationLine1": "High-Tech Industrial Development Zone",
+    "locationLine2": "Shenzhen, China",
+    "hoursTitle": "Öffnungszeiten",
+    "hoursLine1": "Montag – Freitag",
+    "hoursLine2": "9:00 – 18:00 Uhr",
+    "galleryAlt": "Galerie",
+    "storeAlt": "Alda Store",
+    "heroText": "With lab-grown diamonds at the core, we aim to further strengthen the industrial chain and build a fully integrated jewelry ecosystem covering lab-grown diamond production, cutting and polishing, setting, jewelry manufacturing, and market promotion. Our goal is to secure a leading position in the international lab-grown diamond industry in the future."
+  },
+  "brandStory": {
+    "title": "Entworfen für achtsame Menschen — für alle, die ihr Leben und die Dinge, die sie besitzen, bewusst kuratieren",
+    "description": "Wir fertigen unsere Produkte aus den nachhaltigsten Materialien, die uns zur Verfügung stehen, wie recyceltem 14K-Gold, 925er Silber und kultivierten Diamanten. Unsere Gold-Vermeil-Stücke verwenden eine besonders dicke Goldschicht über einer Silberbasis, die um ein Vielfaches länger hält als vergoldeter Schmuck. Wir hoffen, dass Sie diese Stücke viele Jahre lang genießen — vielleicht sogar über Generationen.",
+    "styledOnModel": "Am Model getragen",
+    "gifts": "Unsere Lieblingsgeschenke für sie",
+    "learnMore": "Mehr erfahren"
+  },
+  "newArrivals": {
+    "title": "Am Model getragen",
+    "viewAll": "Alle ansehen",
+    "newBadge": "Neu",
+    "viewAllMobile": "Alle Model-Looks ansehen"
+  },
+  "instagram": {
+    "title": "Alda an Ihnen",
+    "shopTheLook": "Look shoppen",
+    "link": "@ALDACO INSTAGRAM",
+    "postAlt": "Instagram-Beitrag von"
+  },
+  "collectionNav": {
+    "title": "Unsere Kollektion"
+  },
+  "testimonials": {
+    "1": {
+      "title": "Atemberaubende Handwerkskunst",
+      "content": "Ich habe Maßschmuck jahrelang bewundert, bevor ich endlich mein erstes Stück in Auftrag gegeben habe. Die Liebe zum Detail hat alle Erwartungen übertroffen — die Fassung ist makellos, das Finish perfekt, und das Design wirkt ganz mühelos elegant.",
+      "author": "Sophia Laurent",
+      "location": "Paris, Frankreich"
+    },
+    "2": {
+      "title": "Ein unvergleichliches Maßanfertigungs-Erlebnis",
+      "content": "Mein maßgefertigtes Verlobungsstück ist ein absoluter Traum. Neben dem wunderschönen Ring selbst war auch der Designberatungsprozess unglaublich aufmerksam und geduldig. Jede Sorge wurde mit echter Sorgfalt und professioneller Beratung beantwortet.",
+      "author": "Oliver Chen",
+      "location": "Melbourne, Australien"
+    },
+    "3": {
+      "title": "Pure Eleganz",
+      "content": "Das Stück kam in einer äußerst luxuriösen Verpackung an. Der Saphir fängt das Licht auf eine Weise ein, die ich mir nie vorgestellt hätte — wirklich fesselnd. In jeder Hinsicht eine perfekte 10.",
+      "author": "Isabella Rivera",
+      "location": "Madrid, Spanien"
+    },
+    "4": {
+      "title": "Jeden Moment wert",
+      "content": "Museumsreife Kunstfertigkeit zu einem Preis, der Luxus wirklich zugänglich macht. Die Materialien sind exquisit, die Linien klar, und die gesamte Ästhetik spricht für sich, ohne laut zu sein."
+    },
+    "5": {
+      "title": "Atemberaubend",
+      "content": "Die Brillanz dieses Stücks ist anders als alles, was ich bisher gesehen habe. In echt noch beeindruckender als auf den Fotos. Hätte ich diese Werkstatt früher gekannt, hätte ich sie für jeden Anlass gewählt.",
+      "author": "Emma Whitfield",
+      "location": "Toronto, Kanada"
+    },
+    "6": {
+      "title": "Handwerksqualität trifft Zugänglichkeit",
+      "content": "Der Detailgrad ist außergewöhnlich — jede Facette, jede Kurve zeigt die Hingabe des Kunsthandwerkers. Schon das Auspacken fühlte sich an, als würde man ein Meisterwerk öffnen. Meine nächste Anfertigung ist bereits geplant.",
+      "author": "Priya Nair",
+      "location": "Dubai, VAE"
+    },
+    "7": {
+      "title": "Eine kuratierte Kollektion, die es wert ist, aufgebaut zu werden",
+      "content": "Von der Halskette, die ich zu meiner Gala getragen habe, bis zu den Ohrringen, die ich meiner Mutter geschenkt habe — jedes Stück war eine Offenbarung. Die Handwerkskunst erzählt eine Geschichte, die massenproduzierter Luxus nie erzählen könnte.",
+      "author": "Marcus Webb",
+      "location": "London, Vereinigtes Königreich"
+    },
+    "8": {
+      "title": "Sie trägt sie überall",
+      "content": "Ich habe diese Stücke als Überraschung zum Jahrestag in Auftrag gegeben. Sie sind zu ihren Signature-Pieces geworden — getragen zu Vorstandssitzungen, Wochenendbrunches und allem dazwischen. Selbstbewusstsein, wunderschön gefertigt.",
+      "author": "Daniel Okafor",
+      "location": "Lagos, Nigeria"
+    },
+    "9": {
+      "title": "Überall ein Gesprächsthema",
+      "content": "Ich trug die Uhr zu einer Dinnerparty und konnte nicht mehr zählen, wie viele Menschen fragten, woher sie sei. Das Gewicht, das Finish, die Präzision — alles flüstert leisen Luxus."
+    },
+    "10": {
+      "title": "Ein Erbstück im Entstehen",
+      "content": "Die zarte Geometrie und der warme Glanz dieser Stücke lassen mich wirklich besonders fühlen. Das ist nicht einfach Schmuck — es ist der Beginn einer Kollektion, die ich bewahren und weitergeben werde.",
+      "author": "Mia Kowalski",
+      "location": "Warschau, Polen"
+    },
+    "11": {
+      "title": "Jenseits aller Erwartungen",
+      "content": "Ich habe sie für meinen Hochzeitstag gewählt, und sie haben jede Hoffnung übertroffen. Sie sitzen wunderschön, reizen empfindliche Haut nicht, und die Geschenkbox-Präsentation war absolut exquisit.",
+      "author": "Yuki Tanaka",
+      "location": "Tokio, Japan"
+    },
+    "12": {
+      "title": "Unverwechselbar und bedeutungsvoll",
+      "content": "Die Qualität spricht für sich, und der Preis macht Luxus erreichbar. Meine Tochter war von ihrem Geschenk verzaubert. Das Design hat einen Charakter, den man nicht an jeder Ecke findet.",
+      "author": "Ava Morales",
+      "location": "São Paulo, Brasilien"
+    }
+  }
+}

@@ -1,0 +1,172 @@
+import { useEffect, useState } from 'react'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import ContactCta from '../components/ContactCta'
+import { bracelets, earrings, necklaces, rings } from '../data'
+import { t } from '../i18n'
+
+const productTabs = [
+  t('product.tabs.rough'),
+  t('product.tabs.loose'),
+  t('product.tabs.earrings'),
+  t('product.tabs.rings'),
+  t('product.tabs.necklace'),
+  t('product.tabs.bracelets'),
+]
+
+const llbColumns = [t('product.rough.gradeCarats'), '1-1.5', '1.5-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-10', '10-12', '12-15']
+const llbRows = [
+  ['A+', true, true, true, true, true, true, true, true, true, true, true],
+  ['A', true, true, true, true, true, true, true, true, true, true, true],
+  ['A-', false, true, true, true, true, true, true, true, true, true, true],
+  ['B', false, true, true, true, true, true, true, true, true, true, true],
+  ['C', false, true, false, false, true, false, false, true, false, false, true],
+]
+
+const llsColumns = [t('product.rough.gradeSize'), '1.0-2.0', '2.0-2.5', '2.5-3.0', '3.0-4.0', '4.0-4.5']
+const llsRows = [
+  ['A', true, true, true, true, true],
+  ['B', true, false, true, true, true],
+  ['C', true, false, true, true, true],
+]
+
+function RoughTable({ title, columns, rows }) {
+  return (
+    <div className="mb-12">
+      <h3 className="mb-6 text-2xl md:text-3xl font-semibold text-brown-900">
+        {title}
+      </h3>
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[780px] border-collapse text-center text-brown-700">
+          <thead>
+            <tr className="bg-[#F1F1F1]">
+              {columns.map(column => (
+                <th key={column} className="border border-brown-200 px-4 py-4 text-lg md:text-xl font-normal">
+                  {column}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((row, rowIndex) => (
+              <tr key={row[0]} className={rowIndex % 2 === 1 ? 'bg-[#F4F4F4]' : 'bg-white'}>
+                <td className="border border-brown-200 px-4 py-4 text-lg md:text-xl">
+                  {row[0]}
+                </td>
+                {row.slice(1).map((hasStar, index) => (
+                  <td key={`${row[0]}-${index}`} className="border border-brown-200 px-4 py-4 text-2xl text-brown-700">
+                    {hasStar ? '★' : ''}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  )
+}
+
+function LooseDiamondVideo() {
+  const [videoReady, setVideoReady] = useState(false)
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => setVideoReady(true), 1800)
+    return () => window.clearTimeout(timer)
+  }, [])
+
+  return (
+    <div className="relative overflow-hidden bg-white min-h-[320px] md:min-h-[520px]">
+      {!videoReady && (
+        <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-cream-dark via-white to-cream-dark" />
+      )}
+      <video
+        src="https://img.aldajewelry.com/dulimulu/compressed-527lossdiamond.mp4"
+        className={`h-full min-h-[320px] md:min-h-[520px] w-full object-cover transition-opacity duration-700 ${
+          videoReady ? 'opacity-100' : 'opacity-0'
+        }`}
+        autoPlay
+        muted
+        loop
+        playsInline
+        controls
+        preload="auto"
+        onLoadedData={() => setVideoReady(true)}
+        onCanPlay={() => setVideoReady(true)}
+      />
+    </div>
+  )
+}
+
+function ProductImageGrid({ products }) {
+  return (
+    <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+      {products.map(product => (
+        <div key={product.id} className="bg-white overflow-hidden">
+          <img
+            src={product.image}
+            alt=""
+            className="w-full aspect-square object-cover"
+          />
+        </div>
+      ))}
+    </div>
+  )
+}
+
+export default function ProductPage() {
+  const [activeTab, setActiveTab] = useState(productTabs[0])
+
+  return (
+    <div className="min-h-screen bg-cream">
+      <Header />
+      <section className="bg-gradient-to-b from-cream-dark to-cream pt-24 pb-16 md:pt-32 md:pb-24 px-6 md:px-12 lg:px-24">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="heading-serif text-4xl md:text-6xl lg:text-7xl text-brown-900 leading-tight mb-4">
+            {t('product.title')}
+          </h1>
+          <p className="text-lg md:text-xl text-brown-600 font-light max-w-2xl mx-auto">
+            {t('product.description')}
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-cream px-6 md:px-12 lg:px-24 py-10 md:py-20">
+        <div className="max-w-7xl mx-auto">
+          <nav className="sticky top-[56px] z-40 mb-10 grid grid-cols-2 gap-x-8 gap-y-5 border-b border-brown-200 bg-cream py-4 text-left md:gap-x-14 md:gap-y-6 md:py-5">
+            {productTabs.map(tab => (
+              <button
+                key={tab}
+                type="button"
+                onClick={() => setActiveTab(tab)}
+                className={`text-left text-xs md:text-base font-medium tracking-wide uppercase ${
+                  activeTab === tab ? 'text-[#BABD8A]' : 'text-brown-900'
+                }`}
+              >
+                {tab}
+              </button>
+            ))}
+          </nav>
+
+          <div className="min-h-[320px]">
+            {activeTab === t('product.tabs.rough') && (
+              <div className="text-brown-700">
+                <RoughTable title={t('product.rough.llbTitle')} columns={llbColumns} rows={llbRows} />
+                <RoughTable title={t('product.rough.llsTitle')} columns={llsColumns} rows={llsRows} />
+              </div>
+            )}
+            {activeTab === t('product.tabs.loose') && <LooseDiamondVideo />}
+            {activeTab === t('product.tabs.earrings') && <ProductImageGrid products={earrings} />}
+            {activeTab === t('product.tabs.rings') && <ProductImageGrid products={rings} />}
+            {activeTab === t('product.tabs.necklace') && <ProductImageGrid products={necklaces} />}
+            {activeTab === t('product.tabs.bracelets') && <ProductImageGrid products={bracelets} />}
+          </div>
+        </div>
+      </section>
+
+      <ContactCta />
+
+      <Footer />
+    </div>
+  )
+}

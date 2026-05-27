@@ -1,0 +1,200 @@
+{
+  "site": {
+    "title": "Alda Jewelry Manufacturer",
+    "brand": "ALDA"
+  },
+  "nav": {
+    "necklaces": "Necklaces",
+    "rings": "Rings",
+    "earrings": "Earrings",
+    "bracelets": "Bracelets",
+    "about": "About",
+    "manufacturingCapabilities": "Inside Alda Jewelry"
+  },
+  "language": {
+    "english": "English"
+  },
+  "hero": {
+    "imageAlt": "Lab-grown diamond ring",
+    "title": "Primary Source for Lab-Grown Diamonds",
+    "subtitle": "Premium Direct Source",
+    "description": "Full Customization, Any Creation",
+    "cta": "PRODUCT"
+  },
+  "home": {
+    "styledOnModel": "Styled On Model",
+    "testimonialsTitle": "Acclaim from countless bespoke clients"
+  },
+  "collection": {
+    "rings": {
+      "title": "Ring Collection",
+      "description": "Discover our curated collection of lab-grown diamond rings — designed to celebrate life's most meaningful moments."
+    },
+    "earrings": {
+      "title": "Earring Collection",
+      "description": "Discover our curated collection of lab-grown diamond earrings — designed to celebrate life's most meaningful moments."
+    },
+    "bracelets": {
+      "title": "Bracelet Collection",
+      "description": "Discover our curated collection of lab-grown diamond bracelets — designed to celebrate life's most meaningful moments."
+    },
+    "necklaces": {
+      "title": "Necklace Collection",
+      "description": "Discover our curated collection of lab-grown diamond necklaces — designed to celebrate life's most meaningful moments."
+    }
+  },
+  "product": {
+    "title": "Product Collection",
+    "description": "Our dedication lies in providing high-quality products and services, working toward shared prosperity among shareholders, clients, staff and partners.",
+    "tabs": {
+      "rough": "LAB-GROWN DIAMOND ROUGH",
+      "loose": "LAB-GROWN LOOSE DIAMOND",
+      "earrings": "EARRINGS",
+      "rings": "RINGS",
+      "necklace": "NECKLACE",
+      "bracelets": "BRACELETS"
+    },
+    "rough": {
+      "llbTitle": "LLB Series Diamond Rough Size Chart",
+      "llsTitle": "LLS Series Diamond Rough Size Chart",
+      "gradeCarats": "Grade/Carats",
+      "gradeSize": "Grade/Size mm"
+    },
+    "badge": {
+      "limitedNew": "LIMITED NEW",
+      "popularPick": "POPULAR PICK"
+    }
+  },
+  "cta": {
+    "email": "sales@aldajewelry.com",
+    "emailDescription": "For more product catalogs, please contact us by email."
+  },
+  "footer": {
+    "communityTitle": "Join the Alda Community",
+    "communityDescription": "Sign up for early access to new collections, exclusive offers, and styling inspiration.",
+    "emailPlaceholder": "Your email address",
+    "subscribe": "Subscribe",
+    "catalog": "CATALOG",
+    "company": "Company",
+    "ourStory": "Our Story",
+    "copyright": "© 2018 Alda. All rights reserved.",
+    "popupSuccess": "You have been subscribed",
+    "popupInvalid": "Re-enter your email"
+  },
+  "about": {
+    "storyTitle": "Our Story",
+    "story1": "Alda was founded on a simple belief: luxury jewelry should be beautiful, responsibly made, and accessible. We create pieces that honor tradition while embracing innovation.",
+    "story2": "Every piece is handcrafted in our workshop using ethically sourced lab-grown diamonds and recycled precious metals. Our artisans bring decades of experience to each creation, ensuring impeccable quality in every detail.",
+    "story3": "From the first sketch to the final polish, we take pride in making jewelry that tells a story — your story.",
+    "craftsmanshipAlt": "Alda craftsmanship",
+    "valuesTitle": "Our Values",
+    "sustainabilityTitle": "Sustainability",
+    "sustainabilityDescription": "Lab-grown diamonds use 95% less water and produce 80% less carbon emissions than mined diamonds.",
+    "craftsmanshipTitle": "Craftsmanship",
+    "craftsmanshipDescription": "Each piece is handcrafted by skilled artisans with decades of experience in fine jewelry making.",
+    "transparencyTitle": "Transparency",
+    "transparencyDescription": "We believe in honest pricing and full disclosure of materials and processes.",
+    "visitTitle": "Visit Us",
+    "locationTitle": "Location",
+    "locationLine1": "High-Tech Industrial Development Zone",
+    "locationLine2": "Shenzhen, China",
+    "hoursTitle": "Opening Hours",
+    "hoursLine1": "Monday – Friday",
+    "hoursLine2": "9:00 AM – 6:00 PM",
+    "galleryAlt": "Gallery",
+    "storeAlt": "Alda Store",
+    "heroText": "With lab-grown diamonds at the core, we aim to further strengthen the industrial chain and build a fully integrated jewelry ecosystem covering lab-grown diamond production, cutting and polishing, setting, jewelry manufacturing, and market promotion. Our goal is to secure a leading position in the international lab-grown diamond industry in the future."
+  },
+  "brandStory": {
+    "title": "Designed for thoughtful individuals—people who curate their lives and the objects they own",
+    "description": "We craft our products using the most sustainable materials available to us, like recycled 14k gold & 925 silver and cultivated diamonds. Our gold vermeil pieces use an ultra thick layer of gold over a silver base that lasts many times longer than gold-plated jewelry. Our hope is that you'll enjoy these pieces for many years—even generations.",
+    "styledOnModel": "Styled On Model",
+    "gifts": "Our Fave Gifts for Her",
+    "learnMore": "Learn More"
+  },
+  "newArrivals": {
+    "title": "Styled On Model",
+    "viewAll": "View All",
+    "newBadge": "New",
+    "viewAllMobile": "View All Styled On Model"
+  },
+  "instagram": {
+    "title": "Alda on You",
+    "shopTheLook": "Shop the Look",
+    "link": "@ALDACO INSTAGRAM",
+    "postAlt": "Instagram post by"
+  },
+  "collectionNav": {
+    "title": "Our Collection"
+  },
+  "testimonials": {
+    "1": {
+      "title": "Stunning Craftsmanship",
+      "content": "I've been admiring bespoke jewelry for years before finally commissioning my first piece. The attention to detail exceeded all expectations—the setting is flawless, the finish is impeccable, and the design carries itself with effortless elegance.",
+      "author": "Sophia Laurent",
+      "location": "Paris, France"
+    },
+    "2": {
+      "title": "Bespoke Experience Beyond Compare",
+      "content": "My custom engagement piece is an absolute dream. Beyond the stunning ring itself, the design consultation process was incredibly thoughtful and patient. Every concern was addressed with genuine care and professional guidance.",
+      "author": "Oliver Chen",
+      "location": "Melbourne, Australia"
+    },
+    "3": {
+      "title": "Pure Elegance",
+      "content": "The piece arrived in the most luxurious packaging. The sapphire catches light in ways I never imagined—truly captivating. A perfect 10 in every aspect.",
+      "author": "Isabella Rivera",
+      "location": "Madrid, Spain"
+    },
+    "4": {
+      "title": "Worth Every Moment",
+      "content": "Museum-quality artistry at a price that makes luxury truly accessible. The materials are exquisite, the lines are clean, and the overall aesthetic speaks volumes without being loud."
+    },
+    "5": {
+      "title": "Breathtaking",
+      "content": "The brilliance of this piece is unlike anything I've seen. Even more stunning in person than in photos. Had I known about this workshop sooner, I would have chosen them for every occasion.",
+      "author": "Emma Whitfield",
+      "location": "Toronto, Canada"
+    },
+    "6": {
+      "title": "Artisan Quality Meets Accessibility",
+      "content": "The level of detail is extraordinary—each facet, each curve speaks to the artisan's dedication. The unboxing alone felt like unwrapping a masterpiece. Already planning my next commission.",
+      "author": "Priya Nair",
+      "location": "Dubai, UAE"
+    },
+    "7": {
+      "title": "A Curated Collection Worth Building",
+      "content": "From the necklace I wore to my gala to the earrings I gifted my mother—each piece has been a revelation. The craftsmanship tells a story that mass-produced luxury never could.",
+      "author": "Marcus Webb",
+      "location": "London, UK"
+    },
+    "8": {
+      "title": "She Wears It Everywhere",
+      "content": "Commissioned these as an anniversary surprise. They've become her signature pieces—worn to board meetings, weekend brunches, and everything in between. Confidence, beautifully crafted.",
+      "author": "Daniel Okafor",
+      "location": "Lagos, Nigeria"
+    },
+    "9": {
+      "title": "Conversations Started Everywhere",
+      "content": "Wore the watch to a dinner party and lost count of how many people asked where it was from. The weight, the finish, the precision—it all whispers quiet luxury."
+    },
+    "10": {
+      "title": "A Heirloom in the Making",
+      "content": "The delicate geometry and the warm glow of these pieces make me feel genuinely special. This isn't just jewelry—it's the beginning of a collection I'll treasure and pass down.",
+      "author": "Mia Kowalski",
+      "location": "Warsaw, Poland"
+    },
+    "11": {
+      "title": "Beyond Expectations",
+      "content": "Chose these for my wedding day and they surpassed every hope. They sit beautifully, don't irritate sensitive skin, and the gift box presentation was absolutely exquisite.",
+      "author": "Yuki Tanaka",
+      "location": "Tokyo, Japan"
+    },
+    "12": {
+      "title": "Distinctive and Meaningful",
+      "content": "The quality speaks for itself and the price makes luxury attainable. My daughter was enchanted by her gift. The design has a character you won't find on every corner.",
+      "author": "Ava Morales",
+      "location": "São Paulo, Brazil"
+    }
+  }
+}

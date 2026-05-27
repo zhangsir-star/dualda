@@ -1,32 +1,33 @@
 import { newArrivals } from '../data'
+import { t } from '../i18n'
 
 export default function NewArrivals() {
   return (
     <section className="section-padding bg-cream-dark">
       <div className="flex justify-between items-center mb-12 max-w-6xl mx-auto">
         <h2 className="heading-serif text-3xl md:text-4xl text-brown-900">
-          New Arrivals
+          {t('newArrivals.title')}
         </h2>
         <a href="#" className="text-sm tracking-wider uppercase border-b-2 border-brown-900 pb-1 hover:text-brown-600 hover:border-brown-600 transition-colors hidden md:block">
-          View All
+          {t('newArrivals.viewAll')}
         </a>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 max-w-6xl mx-auto">
         {newArrivals.map(product => (
-          <a key={product.id} href="#" className="group block">
+          <div key={product.id}>
             <div className="relative overflow-hidden mb-3">
               <img 
                 src={product.image} 
                 alt={product.title}
-                className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full aspect-square object-cover"
               />
               {product.isNew && (
                 <span className="absolute top-3 left-3 px-2 py-1 text-xs font-medium tracking-wider uppercase bg-cream-dark">
-                  New
+                  {t('newArrivals.newBadge')}
                 </span>
               )}
             </div>
-            <h3 className="font-serif text-sm md:text-base text-brown-900 group-hover:underline leading-relaxed">
+            <h3 className="font-serif text-sm md:text-base text-brown-900 leading-relaxed">
               {product.title}
             </h3>
             <p className="text-xs text-brown-600 mt-1">{product.description}</p>
@@ -38,11 +39,11 @@ export default function NewArrivals() {
                 ${product.discountPrice.toFixed(2)} USD
               </span>
             </div>
-          </a>
+          </div>
         ))}
       </div>
       <div className="mt-8 text-center md:hidden">
-        <a href="#" className="btn-outline">View All New Arrivals</a>
+        <a href="#" className="btn-outline">{t('newArrivals.viewAllMobile')}</a>
       </div>
     </section>
   )

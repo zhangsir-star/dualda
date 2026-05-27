@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { Clock, Mail, Phone } from 'lucide-react'
+import { t } from '../i18n'
 
 export default function AboutPage() {
   return (
@@ -9,11 +10,8 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="bg-gradient-to-b from-cream-dark to-cream pt-24 pb-16 md:pt-32 md:pb-24 px-6 md:px-12 lg:px-24">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="heading-serif text-4xl md:text-6xl lg:text-7xl text-brown-900 leading-tight mb-4">
-            About Alda
-          </h1>
-          <p className="text-lg md:text-xl text-brown-600 font-light max-w-2xl mx-auto">
-            Lab-grown diamond jewelry, crafted with intention. Designed to be worn, loved, and passed down.
+          <p className="text-lg md:text-xl text-brown-600 font-light leading-relaxed max-w-4xl mx-auto text-center">
+            {t('about.heroText')}
           </p>
         </div>
       </section>
@@ -22,23 +20,23 @@ export default function AboutPage() {
       <section className="px-6 md:px-12 lg:px-24 py-16 md:py-24 border-b border-brown-200">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <div>
-            <h2 className="heading-serif text-3xl md:text-4xl text-brown-900 mb-6">Our Story</h2>
+            <h2 className="heading-serif text-3xl md:text-4xl text-brown-900 mb-6">{t('about.storyTitle')}</h2>
             <div className="space-y-4 text-brown-600 text-sm md:text-base leading-relaxed">
               <p>
-                Alda was founded on a simple belief: luxury jewelry should be beautiful, responsibly made, and accessible. We create pieces that honor tradition while embracing innovation.
+                {t('about.story1')}
               </p>
               <p>
-                Every piece is handcrafted in our workshop using ethically sourced lab-grown diamonds and recycled precious metals. Our artisans bring decades of experience to each creation, ensuring impeccable quality in every detail.
+                {t('about.story2')}
               </p>
               <p>
-                From the first sketch to the final polish, we take pride in making jewelry that tells a story — your story.
+                {t('about.story3')}
               </p>
             </div>
           </div>
           <div className="aspect-[4/5] bg-brown-200 rounded-sm overflow-hidden">
             <img 
               src="https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/52013.webp" 
-              alt="Alda craftsmanship" 
+              alt={t('about.craftsmanshipAlt')}
               className="w-full h-full object-cover"
             />
           </div>
@@ -46,26 +44,26 @@ export default function AboutPage() {
       </section>
 
       {/* Our Values */}
-      <section className="px-6 md:px-12 lg:px-24 py-16 md:py-24 border-b border-brown-200">
+      <section id="visit-us" className="px-6 md:px-12 lg:px-24 py-16 md:py-24 border-b border-brown-200 scroll-mt-24">
         <div className="max-w-6xl mx-auto">
-          <h2 className="heading-serif text-3xl md:text-4xl text-brown-900 mb-12 text-center">Our Values</h2>
+          <h2 className="heading-serif text-3xl md:text-4xl text-brown-900 mb-12 text-center">{t('about.valuesTitle')}</h2>
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             <div className="text-center">
-              <h3 className="heading-serif text-xl text-brown-900 mb-3">Sustainability</h3>
+              <h3 className="heading-serif text-xl text-brown-900 mb-3">{t('about.sustainabilityTitle')}</h3>
               <p className="text-brown-600 text-sm leading-relaxed">
-                Lab-grown diamonds use 95% less water and produce 80% less carbon emissions than mined diamonds.
+                {t('about.sustainabilityDescription')}
               </p>
             </div>
             <div className="text-center">
-              <h3 className="heading-serif text-xl text-brown-900 mb-3">Craftsmanship</h3>
+              <h3 className="heading-serif text-xl text-brown-900 mb-3">{t('about.craftsmanshipTitle')}</h3>
               <p className="text-brown-600 text-sm leading-relaxed">
-                Each piece is handcrafted by skilled artisans with decades of experience in fine jewelry making.
+                {t('about.craftsmanshipDescription')}
               </p>
             </div>
             <div className="text-center">
-              <h3 className="heading-serif text-xl text-brown-900 mb-3">Transparency</h3>
+              <h3 className="heading-serif text-xl text-brown-900 mb-3">{t('about.transparencyTitle')}</h3>
               <p className="text-brown-600 text-sm leading-relaxed">
-                We believe in honest pricing and full disclosure of materials and processes.
+                {t('about.transparencyDescription')}
               </p>
             </div>
           </div>
@@ -75,39 +73,35 @@ export default function AboutPage() {
       {/* Visit Us / Contact */}
       <section className="px-6 md:px-12 lg:px-24 py-16 md:py-24 border-b border-brown-200">
         <div className="max-w-6xl mx-auto">
-          <h2 className="heading-serif text-3xl md:text-4xl text-brown-900 mb-12 text-center">Visit Us</h2>
+          <h2 className="heading-serif text-3xl md:text-4xl text-brown-900 mb-12 text-center">{t('about.visitTitle')}</h2>
           <div className="grid md:grid-cols-2 gap-12 md:gap-16">
             {/* Location & Hours + Auto-scroll images */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-sm tracking-wider uppercase text-gold-500 mb-3 font-medium">Location</h3>
+                <h3 className="text-sm tracking-wider uppercase text-gold-500 mb-3 font-medium">{t('about.locationTitle')}</h3>
                 <p className="text-brown-800 text-lg">
-                  Henan High-Tech Industrial Development Zone<br />
-                  Zhengzhou, China
+                  {t('about.locationLine1')}<br />
+                  {t('about.locationLine2')}
                 </p>
               </div>
               <div>
-                <h3 className="text-sm tracking-wider uppercase text-gold-500 mb-3 font-medium">Opening Hours</h3>
+                <h3 className="text-sm tracking-wider uppercase text-gold-500 mb-3 font-medium">{t('about.hoursTitle')}</h3>
                 <p className="text-brown-800 text-lg">
-                  Monday – Friday<br />
-                  9:00 AM – 6:00 PM
+                  {t('about.hoursLine1')}<br />
+                  {t('about.hoursLine2')}
                 </p>
               </div>
-              <div className="overflow-hidden mt-8">
-                <div className="flex gap-4 animate-scroll">
+              <div className="overflow-x-auto mt-8">
+                <div className="flex gap-4">
                   {[
                     'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51403.webp',
                     'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51401.webp',
                     'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51401.webp',
-                  ].concat([
-                    'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51403.webp',
-                    'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51401.webp',
-                    'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51401.webp',
-                  ]).map((src, index) => (
+                  ].map((src, index) => (
                     <img
                       key={index}
                       src={src}
-                      alt={`Gallery ${index}`}
+                      alt={`${t('about.galleryAlt')} ${index}`}
                       className="w-48 h-36 object-cover rounded-sm shrink-0"
                     />
                   ))}
@@ -119,7 +113,7 @@ export default function AboutPage() {
             <div>
               <img 
                 src="https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/52030.webp" 
-                alt="Alda Store" 
+                alt={t('about.storeAlt')}
                 className="w-full object-cover rounded-sm"
                 style={{ maxHeight: '420px' }}
               />

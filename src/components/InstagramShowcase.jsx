@@ -1,10 +1,11 @@
 import { instagramPosts } from '../data'
+import { t } from '../i18n'
 
 export default function InstagramShowcase() {
   return (
     <section className="section-padding bg-cream-dark">
       <h2 className="heading-serif text-2xl md:text-3xl text-center text-brown-900 mb-12">
-        Alda on You
+        {t('instagram.title')}
       </h2>
       
       {/* Horizontal Scroll Container */}
@@ -26,7 +27,7 @@ export default function InstagramShowcase() {
             <div className="aspect-square bg-cream mb-4 overflow-hidden">
               <img 
                 src={post.image}
-                alt={`Instagram post by ${post.username}`}
+                alt={`${t('instagram.postAlt')} ${post.username}`}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -42,13 +43,13 @@ export default function InstagramShowcase() {
 
             {/* Shop the Look Button */}
             <button className="w-full py-2 border border-brown-900 text-sm tracking-wider uppercase hover:bg-brown-900 hover:text-white transition-colors">
-              Shop the Look
+              {t('instagram.shopTheLook')}
             </button>
 
             {/* Instagram Link */}
             <div className="mt-3 text-center">
               <a href="#" className="text-xs tracking-wider text-brown-600 hover:text-brown-900">
-                @ALDACO INSTAGRAM
+                {t('instagram.link')}
               </a>
             </div>
           </div>

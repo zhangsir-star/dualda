@@ -1,0 +1,200 @@
+{
+  "site": {
+    "title": "Manifattura di gioielli Alda",
+    "brand": "ALDA"
+  },
+  "nav": {
+    "necklaces": "Collane",
+    "rings": "Anelli",
+    "earrings": "Orecchini",
+    "bracelets": "Bracciali",
+    "about": "About",
+    "manufacturingCapabilities": "Inside Alda Jewelry"
+  },
+  "language": {
+    "english": "Inglese"
+  },
+  "hero": {
+    "imageAlt": "Anello con diamante creato in laboratorio",
+    "title": "Fonte primaria per diamanti creati in laboratorio",
+    "subtitle": "Fonte diretta premium",
+    "description": "Personalizzazione completa, qualsiasi creazione",
+    "cta": "PRODUCT"
+  },
+  "home": {
+    "styledOnModel": "Indossato su modella",
+    "testimonialsTitle": "Apprezzamenti da innumerevoli clienti bespoke"
+  },
+  "collection": {
+    "rings": {
+      "title": "Collezione anelli",
+      "description": "Scopri la nostra selezione curata di anelli con diamanti creati in laboratorio — pensati per celebrare i momenti più significativi della vita."
+    },
+    "earrings": {
+      "title": "Collezione orecchini",
+      "description": "Scopri la nostra selezione curata di orecchini con diamanti creati in laboratorio — pensati per celebrare i momenti più significativi della vita."
+    },
+    "bracelets": {
+      "title": "Collezione bracciali",
+      "description": "Scopri la nostra selezione curata di bracciali con diamanti creati in laboratorio — pensati per celebrare i momenti più significativi della vita."
+    },
+    "necklaces": {
+      "title": "Collezione collane",
+      "description": "Scopri la nostra selezione curata di collane con diamanti creati in laboratorio — pensate per celebrare i momenti più significativi della vita."
+    }
+  },
+  "product": {
+    "title": "Collezione prodotti",
+    "description": "Il nostro impegno è offrire prodotti e servizi di alta qualità, lavorando per una prosperità condivisa tra azionisti, clienti, personale e partner.",
+    "tabs": {
+      "rough": "DIAMANTE GREZZO CREATO IN LABORATORIO",
+      "loose": "DIAMANTE SCIOLTO CREATO IN LABORATORIO",
+      "earrings": "ORECCHINI",
+      "rings": "ANELLI",
+      "necklace": "COLLANA",
+      "bracelets": "BRACCIALI"
+    },
+    "rough": {
+      "llbTitle": "Tabella misure diamanti grezzi serie LLB",
+      "llsTitle": "Tabella misure diamanti grezzi serie LLS",
+      "gradeCarats": "Grado/Carati",
+      "gradeSize": "Grado/Misura mm"
+    },
+    "badge": {
+      "limitedNew": "NOVITÀ LIMITATA",
+      "popularPick": "SCELTA POPOLARE"
+    }
+  },
+  "cta": {
+    "email": "sales@aldajewelry.com",
+    "emailDescription": "For more product catalogs, please contact us by email."
+  },
+  "footer": {
+    "communityTitle": "Unisciti alla community Alda",
+    "communityDescription": "Iscriviti per accedere in anteprima alle nuove collezioni, offerte esclusive e ispirazioni di stile.",
+    "emailPlaceholder": "Il tuo indirizzo email",
+    "subscribe": "Iscriviti",
+    "catalog": "CATALOGO",
+    "company": "Azienda",
+    "ourStory": "La nostra storia",
+    "copyright": "© 2018 Alda. Tutti i diritti riservati.",
+    "popupSuccess": "Iscrizione completata",
+    "popupInvalid": "Inserisci di nuovo la tua email"
+  },
+  "about": {
+    "storyTitle": "La nostra storia",
+    "story1": "Alda nasce da una convinzione semplice: la gioielleria di lusso dovrebbe essere bella, realizzata in modo responsabile e accessibile. Creiamo pezzi che onorano la tradizione abbracciando l’innovazione.",
+    "story2": "Ogni pezzo è realizzato a mano nel nostro laboratorio con diamanti creati in laboratorio da fonti etiche e metalli preziosi riciclati. I nostri artigiani portano decenni di esperienza in ogni creazione, garantendo una qualità impeccabile in ogni dettaglio.",
+    "story3": "Dal primo schizzo alla lucidatura finale, siamo orgogliosi di realizzare gioielli che raccontano una storia — la tua storia.",
+    "craftsmanshipAlt": "Artigianalità Alda",
+    "valuesTitle": "I nostri valori",
+    "sustainabilityTitle": "Sostenibilità",
+    "sustainabilityDescription": "I diamanti creati in laboratorio utilizzano il 95% di acqua in meno e producono l’80% di emissioni di carbonio in meno rispetto ai diamanti estratti.",
+    "craftsmanshipTitle": "Artigianalità",
+    "craftsmanshipDescription": "Ogni pezzo è realizzato a mano da artigiani esperti con decenni di esperienza nell’alta gioielleria.",
+    "transparencyTitle": "Trasparenza",
+    "transparencyDescription": "Crediamo in prezzi onesti e nella piena trasparenza su materiali e processi.",
+    "visitTitle": "Vieni a trovarci",
+    "locationTitle": "Sede",
+    "locationLine1": "High-Tech Industrial Development Zone",
+    "locationLine2": "Shenzhen, Cina",
+    "hoursTitle": "Orari di apertura",
+    "hoursLine1": "Lunedì – Venerdì",
+    "hoursLine2": "9:00 – 18:00",
+    "galleryAlt": "Galleria",
+    "storeAlt": "Alda Store",
+    "heroText": "With lab-grown diamonds at the core, we aim to further strengthen the industrial chain and build a fully integrated jewelry ecosystem covering lab-grown diamond production, cutting and polishing, setting, jewelry manufacturing, and market promotion. Our goal is to secure a leading position in the international lab-grown diamond industry in the future."
+  },
+  "brandStory": {
+    "title": "Pensato per persone attente — chi cura la propria vita e gli oggetti che possiede",
+    "description": "Realizziamo i nostri prodotti con i materiali più sostenibili a nostra disposizione, come oro 14k riciclato, argento 925 e diamanti coltivati. I nostri pezzi in vermeil d’oro utilizzano uno strato d’oro ultra spesso su una base in argento, molto più duraturo dei gioielli placcati oro. Speriamo che tu possa apprezzare questi pezzi per molti anni — persino per generazioni.",
+    "styledOnModel": "Indossato su modella",
+    "gifts": "I nostri regali preferiti per lei",
+    "learnMore": "Scopri di più"
+  },
+  "newArrivals": {
+    "title": "Indossato su modella",
+    "viewAll": "Vedi tutto",
+    "newBadge": "Nuovo",
+    "viewAllMobile": "Vedi tutti i look su modella"
+  },
+  "instagram": {
+    "title": "Alda su di te",
+    "shopTheLook": "Acquista il look",
+    "link": "@ALDACO INSTAGRAM",
+    "postAlt": "Post Instagram di"
+  },
+  "collectionNav": {
+    "title": "La nostra collezione"
+  },
+  "testimonials": {
+    "1": {
+      "title": "Artigianalità straordinaria",
+      "content": "Ammiravo i gioielli bespoke da anni prima di commissionare finalmente il mio primo pezzo. L’attenzione ai dettagli ha superato ogni aspettativa — l’incastonatura è impeccabile, la finitura perfetta e il design si porta con un’eleganza naturale.",
+      "author": "Sophia Laurent",
+      "location": "Parigi, Francia"
+    },
+    "2": {
+      "title": "Un’esperienza bespoke senza paragoni",
+      "content": "Il mio pezzo di fidanzamento personalizzato è un sogno assoluto. Oltre all’anello meraviglioso, il processo di consulenza sul design è stato incredibilmente attento e paziente. Ogni dubbio è stato affrontato con cura autentica e guida professionale.",
+      "author": "Oliver Chen",
+      "location": "Melbourne, Australia"
+    },
+    "3": {
+      "title": "Pura eleganza",
+      "content": "Il pezzo è arrivato in una confezione estremamente lussuosa. Lo zaffiro cattura la luce in modi che non avrei mai immaginato — davvero affascinante. Un perfetto 10 sotto ogni aspetto.",
+      "author": "Isabella Rivera",
+      "location": "Madrid, Spagna"
+    },
+    "4": {
+      "title": "Vale ogni momento",
+      "content": "Arte di qualità museale a un prezzo che rende il lusso davvero accessibile. I materiali sono squisiti, le linee pulite e l’estetica complessiva comunica moltissimo senza essere appariscente."
+    },
+    "5": {
+      "title": "Mozzafiato",
+      "content": "La brillantezza di questo pezzo è diversa da qualsiasi cosa abbia visto. Ancora più splendido dal vivo che in foto. Se avessi conosciuto prima questo laboratorio, lo avrei scelto per ogni occasione.",
+      "author": "Emma Whitfield",
+      "location": "Toronto, Canada"
+    },
+    "6": {
+      "title": "Qualità artigianale e accessibilità",
+      "content": "Il livello di dettaglio è straordinario — ogni faccetta, ogni curva parla della dedizione dell’artigiano. Persino l’unboxing sembrava l’apertura di un capolavoro. Sto già pianificando la mia prossima commissione.",
+      "author": "Priya Nair",
+      "location": "Dubai, EAU"
+    },
+    "7": {
+      "title": "Una collezione curata che vale la pena costruire",
+      "content": "Dalla collana che ho indossato al mio gala agli orecchini che ho regalato a mia madre — ogni pezzo è stato una rivelazione. L’artigianalità racconta una storia che il lusso prodotto in massa non potrebbe mai raccontare.",
+      "author": "Marcus Webb",
+      "location": "Londra, Regno Unito"
+    },
+    "8": {
+      "title": "Li indossa ovunque",
+      "content": "Li ho commissionati come sorpresa per l’anniversario. Sono diventati i suoi pezzi distintivi — indossati nelle riunioni di lavoro, ai brunch del weekend e in ogni occasione intermedia. Sicurezza, splendidamente realizzata.",
+      "author": "Daniel Okafor",
+      "location": "Lagos, Nigeria"
+    },
+    "9": {
+      "title": "Conversazioni ovunque",
+      "content": "Ho indossato l’orologio a una cena e ho perso il conto di quante persone mi abbiano chiesto da dove venisse. Il peso, la finitura, la precisione — tutto sussurra lusso discreto."
+    },
+    "10": {
+      "title": "Un’eredità in divenire",
+      "content": "La geometria delicata e il caldo bagliore di questi pezzi mi fanno sentire davvero speciale. Non è solo gioielleria — è l’inizio di una collezione che custodirò e tramanderò.",
+      "author": "Mia Kowalski",
+      "location": "Varsavia, Polonia"
+    },
+    "11": {
+      "title": "Oltre le aspettative",
+      "content": "Li ho scelti per il giorno del mio matrimonio e hanno superato ogni speranza. Si indossano magnificamente, non irritano la pelle sensibile e la presentazione nella confezione regalo era assolutamente squisita.",
+      "author": "Yuki Tanaka",
+      "location": "Tokyo, Giappone"
+    },
+    "12": {
+      "title": "Distintivo e significativo",
+      "content": "La qualità parla da sé e il prezzo rende il lusso raggiungibile. Mia figlia è rimasta incantata dal suo regalo. Il design ha un carattere che non si trova a ogni angolo.",
+      "author": "Ava Morales",
+      "location": "São Paulo, Brasile"
+    }
+  }
+}

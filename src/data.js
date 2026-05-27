@@ -1,3 +1,5 @@
+import { t } from './i18n'
+
 export const bestSellers = [
   {
     id: 'fleur',
@@ -6,7 +8,7 @@ export const bestSellers = [
     price: 339.00,
     discountPrice: 288.00,
     image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51260.webp',
-    badge: 'LIMITED NEW'
+    badge: t('product.badge.limitedNew')
   },
   {
     id: 'caterina',
@@ -15,7 +17,7 @@ export const bestSellers = [
     price: 699.00,
     discountPrice: 594.00,
     image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51261.webp',
-    badge: 'LIMITED NEW'
+    badge: t('product.badge.limitedNew')
   },
   {
     id: 'ariana',
@@ -48,7 +50,7 @@ export const bestSellers = [
     price: 355.00,
     discountPrice: 301.00,
     image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51264.webp',
-    badge: 'POPULAR PICK'
+    badge: t('product.badge.popularPick')
   }
 ]
 
@@ -97,7 +99,8 @@ export const necklaces = [
   { id: 'necklace-04', title: 'Pear Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51252.webp' },
   { id: 'necklace-05', title: 'Layered Chain Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51253.webp' },
   { id: 'necklace-06', title: 'Heart Pendant Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51254.webp' },
-  { id: 'necklace-07', title: 'Station Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51255.webp' }
+  { id: 'necklace-07', title: 'Station Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51255.webp' },
+  { id: 'necklace-08', title: 'Diamond Necklace', image: 'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/527001.webp' }
 ]
 
 export const bracelets = [
@@ -114,82 +117,82 @@ export const bracelets = [
 export const testimonials = [
   {
     id: 1,
-    title: 'Stunning Craftsmanship',
-    content: 'I\'ve been admiring bespoke jewelry for years before finally commissioning my first piece. The attention to detail exceeded all expectations—the setting is flawless, the finish is impeccable, and the design carries itself with effortless elegance.',
-    author: 'Sophia Laurent',
-    location: 'Paris, France'
+    title: t('testimonials.1.title'),
+    content: t('testimonials.1.content'),
+    author: t('testimonials.1.author'),
+    location: t('testimonials.1.location')
   },
   {
     id: 2,
-    title: 'Bespoke Experience Beyond Compare',
-    content: 'My custom engagement piece is an absolute dream. Beyond the stunning ring itself, the design consultation process was incredibly thoughtful and patient. Every concern was addressed with genuine care and professional guidance.',
-    author: 'Oliver Chen',
-    location: 'Melbourne, Australia'
+    title: t('testimonials.2.title'),
+    content: t('testimonials.2.content'),
+    author: t('testimonials.2.author'),
+    location: t('testimonials.2.location')
   },
   {
     id: 3,
-    title: 'Pure Elegance',
-    content: 'The piece arrived in the most luxurious packaging. The sapphire catches light in ways I never imagined—truly captivating. A perfect 10 in every aspect.',
-    author: 'Isabella Rivera',
-    location: 'Madrid, Spain'
+    title: t('testimonials.3.title'),
+    content: t('testimonials.3.content'),
+    author: t('testimonials.3.author'),
+    location: t('testimonials.3.location')
   },
   {
     id: 4,
-    title: 'Worth Every Moment',
-    content: 'Museum-quality artistry at a price that makes luxury truly accessible. The materials are exquisite, the lines are clean, and the overall aesthetic speaks volumes without being loud.',
+    title: t('testimonials.4.title'),
+    content: t('testimonials.4.content'),
   },
   {
     id: 5,
-    title: 'Breathtaking',
-    content: 'The brilliance of this piece is unlike anything I\'ve seen. Even more stunning in person than in photos. Had I known about this workshop sooner, I would have chosen them for every occasion.',
-    author: 'Emma Whitfield',
-    location: 'Toronto, Canada'
+    title: t('testimonials.5.title'),
+    content: t('testimonials.5.content'),
+    author: t('testimonials.5.author'),
+    location: t('testimonials.5.location')
   },
   {
     id: 6,
-    title: 'Artisan Quality Meets Accessibility',
-    content: 'The level of detail is extraordinary—each facet, each curve speaks to the artisan\'s dedication. The unboxing alone felt like unwrapping a masterpiece. Already planning my next commission.',
-    author: 'Priya Nair',
-    location: 'Dubai, UAE'
+    title: t('testimonials.6.title'),
+    content: t('testimonials.6.content'),
+    author: t('testimonials.6.author'),
+    location: t('testimonials.6.location')
   },
   {
     id: 7,
-    title: 'A Curated Collection Worth Building',
-    content: 'From the necklace I wore to my gala to the earrings I gifted my mother—each piece has been a revelation. The craftsmanship tells a story that mass-produced luxury never could.',
-    author: 'Marcus Webb',
-    location: 'London, UK'
+    title: t('testimonials.7.title'),
+    content: t('testimonials.7.content'),
+    author: t('testimonials.7.author'),
+    location: t('testimonials.7.location')
   },
   {
     id: 8,
-    title: 'She Wears It Everywhere',
-    content: 'Commissioned these as an anniversary surprise. They\'ve become her signature pieces—worn to board meetings, weekend brunches, and everything in between. Confidence, beautifully crafted.',
-    author: 'Daniel Okafor',
-    location: 'Lagos, Nigeria'
+    title: t('testimonials.8.title'),
+    content: t('testimonials.8.content'),
+    author: t('testimonials.8.author'),
+    location: t('testimonials.8.location')
   },
   {
     id: 9,
-    title: 'Conversations Started Everywhere',
-    content: 'Wore the watch to a dinner party and lost count of how many people asked where it was from. The weight, the finish, the precision—it all whispers quiet luxury.',
+    title: t('testimonials.9.title'),
+    content: t('testimonials.9.content'),
   },
   {
     id: 10,
-    title: 'A Heirloom in the Making',
-    content: 'The delicate geometry and the warm glow of these pieces make me feel genuinely special. This isn\'t just jewelry—it\'s the beginning of a collection I\'ll treasure and pass down.',
-    author: 'Mia Kowalski',
-    location: 'Warsaw, Poland'
+    title: t('testimonials.10.title'),
+    content: t('testimonials.10.content'),
+    author: t('testimonials.10.author'),
+    location: t('testimonials.10.location')
   },
   {
     id: 11,
-    title: 'Beyond Expectations',
-    content: 'Chose these for my wedding day and they surpassed every hope. They sit beautifully, don\'t irritate sensitive skin, and the gift box presentation was absolutely exquisite.',
-    author: 'Yuki Tanaka',
-    location: 'Tokyo, Japan'
+    title: t('testimonials.11.title'),
+    content: t('testimonials.11.content'),
+    author: t('testimonials.11.author'),
+    location: t('testimonials.11.location')
   },
   {
     id: 12,
-    title: 'Distinctive and Meaningful',
-    content: 'The quality speaks for itself and the price makes luxury attainable. My daughter was enchanted by her gift. The design has a character you won\'t find on every corner.',
-    author: 'Ava Morales',
-    location: 'São Paulo, Brazil'
+    title: t('testimonials.12.title'),
+    content: t('testimonials.12.content'),
+    author: t('testimonials.12.author'),
+    location: t('testimonials.12.location')
   }
 ]

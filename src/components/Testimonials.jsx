@@ -1,5 +1,6 @@
 import { Star } from 'lucide-react'
 import { testimonials } from '../data'
+import { t } from '../i18n'
 
 export default function Testimonials() {
   // Duplicate testimonials for infinite scroll effect
@@ -14,7 +15,7 @@ export default function Testimonials() {
           ))}
         </div>
         <h2 className="heading-serif text-3xl md:text-4xl text-brown-900">
-          Acclaim from countless bespoke clients
+          {t('home.testimonialsTitle')}
         </h2>
       </div>
 

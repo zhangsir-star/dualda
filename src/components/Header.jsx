@@ -1,33 +1,64 @@
-import { Menu, X, Search } from 'lucide-react'
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { ChevronDown, Globe2, Menu, X } from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
+import { getCurrentLanguage, languageOptions, setLanguage as setAppLanguage, t } from '../i18n'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
-  const [searchOpen, setSearchOpen] = useState(false)
+  const [language, setLanguage] = useState(getCurrentLanguage())
+  const [languageOpen, setLanguageOpen] = useState(false)
+  const mobileMenuRef = useRef(null)
+
+  useEffect(() => {
+    if (!menuOpen) return
+
+    const closeMenuFromOutside = (event) => {
+      if (!mobileMenuRef.current?.contains(event.target)) {
+        setMenuOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', closeMenuFromOutside)
+    return () => document.removeEventListener('mousedown', closeMenuFromOutside)
+  }, [menuOpen])
+
+  const selectLanguage = (nextLanguageCode) => {
+    setLanguage(nextLanguageCode)
+    setLanguageOpen(false)
+    setAppLanguage(nextLanguageCode)
+  }
+
+  const languageSelector = (buttonClassName, iconSize = 14, chevronSize = 12) => (
+    <div className="relative">
+      <button
+        type="button"
+        onClick={() => setLanguageOpen(!languageOpen)}
+        className={`flex items-center gap-1.5 rounded-md border border-brown-200 bg-cream shadow-sm hover:text-brown-600 transition-colors ${buttonClassName}`}
+      >
+        <Globe2 size={iconSize} />
+        <span>{languageOptions.find(option => option.code === language)?.label}</span>
+        <ChevronDown size={chevronSize} />
+      </button>
+      {languageOpen && (
+        <div className="absolute right-0 top-full z-[80] mt-2 w-40 bg-cream border border-brown-200 shadow-lg">
+          {languageOptions.map(option => (
+            <button
+              key={option.code}
+              type="button"
+              onClick={() => selectLanguage(option.code)}
+              className={`block w-full px-4 py-2 text-left text-sm hover:bg-cream-dark ${
+                language === option.code ? 'text-[#BABD8A]' : 'text-brown-900'
+              }`}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  )
 
   return (
     <>
-      {/* Search Overlay */}
-      {searchOpen && (
-        <div className="fixed top-0 left-0 right-0 z-[100] bg-cream py-8 px-6 md:px-12">
-          <div className="flex items-center gap-4 max-w-2xl mx-auto">
-            <button 
-              onClick={() => setSearchOpen(false)}
-              className="p-2 shrink-0"
-            >
-              <X size={20} className="text-brown-900" />
-            </button>
-            <input 
-              type="text" 
-              placeholder="Search our store"
-              className="flex-1 bg-transparent text-sm font-sans tracking-wide text-brown-900 placeholder:text-brown-400 border-b border-brown-300 pb-2 focus:outline-none focus:border-brown-900 transition-colors"
-              autoFocus
-            />
-          </div>
-        </div>
-      )}
-
       {/* Navigation */}
       <header className="sticky top-0 z-50 bg-cream border-b border-brown-200">
         {/* Desktop */}
@@ -35,32 +66,26 @@ export default function Header() {
           <div className="flex items-center justify-between px-12 py-4">
             {/* Left: Navigation */}
             <nav className="flex items-center gap-8 text-sm tracking-wider">
-              <a href="/necklaces" className="hover:underline">Necklaces</a>
-              <a href="/rings" className="hover:underline">Rings</a>
-              <a href="/earrings" className="hover:underline">Earrings</a>
-              <a href="/bracelets" className="hover:underline">Bracelets</a>
+              <a href="/necklaces" className="hover:underline">{t('nav.necklaces')}</a>
+              <a href="/rings" className="hover:underline">{t('nav.rings')}</a>
+              <a href="/earrings" className="hover:underline">{t('nav.earrings')}</a>
+              <a href="/bracelets" className="hover:underline">{t('nav.bracelets')}</a>
             </nav>
 
             <a href="/" className="absolute left-1/2 -translate-x-1/2 text-2xl font-serif tracking-wider text-brown-900">
-              ALDA
+              {t('site.brand')}
             </a>
 
             <div className="flex items-center gap-6">
-              <button 
-                onClick={() => setSearchOpen(true)}
-                className="flex items-center gap-1.5 p-2 hover:text-brown-600 transition-colors"
-              >
-                <Search size={18} />
-                <span className="text-sm tracking-wider">Search</span>
-              </button>
-              <a href="/about" className="text-sm tracking-wider hover:underline">About</a>
+              {languageSelector('px-2 py-1 text-xs tracking-wider')}
+              <a href="/about" className="text-sm tracking-wider hover:underline">{t('nav.about')}</a>
             </div>
           </div>
         </div>
 
         {/* Mobile */}
-        <div className="md:hidden">
-          <div className="flex items-center justify-between px-6 py-4">
+        <div ref={mobileMenuRef} className="md:hidden">
+          <div className="relative flex items-center justify-between px-6 py-4">
             <button 
               className="md:hidden"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -68,31 +93,31 @@ export default function Header() {
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
 
-            <a href="/" className="text-xl font-serif tracking-wider text-brown-900">
-              ALDA
+            <a href="/" className="absolute left-1/2 -translate-x-1/2 text-xl font-serif tracking-wider text-brown-900">
+              {t('site.brand')}
             </a>
 
-            <button 
-              onClick={() => setSearchOpen(true)}
-              className="flex items-center gap-1.5 p-2 hover:text-brown-600 transition-colors"
-            >
-              <Search size={18} />
-              <span className="text-xs tracking-wider">Search</span>
-            </button>
+            {languageSelector('px-1.5 py-1 text-[10px] tracking-wide', 12, 10)}
           </div>
-        </div>
 
-        {/* Mobile Menu */}
-        {menuOpen && (
-          <nav className="md:hidden bg-cream border-t border-brown-200 px-6 py-4 space-y-3">
-            <a href="/necklaces" className="block py-2 text-sm tracking-wider">Necklaces</a>
-            <a href="/rings" className="block py-2 text-sm tracking-wider">Rings</a>
-            <a href="/earrings" className="block py-2 text-sm tracking-wider">Earrings</a>
-            <a href="/bracelets" className="block py-2 text-sm tracking-wider">Bracelets</a>
-            <a href="/about" className="block py-2 text-sm tracking-wider">About</a>
-          </nav>
-        )}
+          {/* Mobile Menu */}
+          {menuOpen && (
+            <nav className="bg-cream border-t border-brown-200 px-6 py-4 space-y-3">
+              <a href="/necklaces" className="block py-2 text-sm tracking-wider">{t('nav.necklaces')}</a>
+              <a href="/rings" className="block py-2 text-sm tracking-wider">{t('nav.rings')}</a>
+              <a href="/earrings" className="block py-2 text-sm tracking-wider">{t('nav.earrings')}</a>
+              <a href="/bracelets" className="block py-2 text-sm tracking-wider">{t('nav.bracelets')}</a>
+              <a href="/about" className="block py-2 text-sm tracking-wider">{t('nav.about')}</a>
+            </nav>
+          )}
+        </div>
       </header>
+      <a
+        href="/about"
+        className="block bg-[#D8DAB8] px-6 py-2 text-center text-xl md:text-2xl font-normal text-black underline"
+      >
+        {t('nav.manufacturingCapabilities')}
+      </a>
     </>
   )
 }
