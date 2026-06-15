@@ -7,7 +7,7 @@ export default function LabDiamondStory() {
         <div className="grid md:grid-cols-2">
           <div className="overflow-hidden bg-brown-100">
             <img
-              src="https://img.aldajewelry.com/dulimulu/61601.webp"
+              src="https://img.aldajewelry.com/dulimulu/61610.webp"
               alt="Lab-grown diamond setting"
               className="aspect-[4/3] h-full w-full object-cover"
               loading="lazy"

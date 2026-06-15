@@ -6,7 +6,7 @@ export default function AppointmentSection() {
   const mailto = `mailto:${appointmentEmail}`
 
   return (
-    <section className="bg-cream px-6 py-16 md:px-12 md:py-24 lg:px-24">
+    <section className="bg-cream px-6 pt-20 pb-0 md:px-12 md:pt-32 lg:px-24">
       <div className="mx-auto max-w-6xl text-center">
         <h2 className="mb-10 text-sm font-semibold uppercase tracking-[0.24em] text-gold-600 md:text-base">
           Make an Appointment
@@ -22,7 +22,7 @@ export default function AppointmentSection() {
           <Mail size={18} strokeWidth={1.8} />
           {appointmentEmail}
         </a>
-        <div className="mt-12 overflow-hidden rounded-sm border border-brown-100 bg-brown-100 shadow-[0_18px_45px_rgba(46,36,26,0.14)]">
+        <div className="-mx-6 mt-40 overflow-hidden border border-brown-100 bg-brown-100 shadow-[0_18px_45px_rgba(46,36,26,0.14)] md:mx-0 md:rounded-sm">
           <img
             src="https://img.aldajewelry.com/dulimulu/61606.webp"
             alt="Alda appointment jewelry consultation"

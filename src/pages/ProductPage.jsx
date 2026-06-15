@@ -36,12 +36,12 @@ function RoughTable({ title, columns, rows }) {
       <h3 className="mb-6 text-2xl md:text-3xl font-semibold text-brown-900">
         {title}
       </h3>
-      <div className="overflow-x-auto">
-        <table className="w-full min-w-[780px] border-collapse text-center text-brown-700">
+      <div className="w-full overflow-hidden">
+        <table className="w-full table-fixed border-collapse text-center text-brown-700">
           <thead>
             <tr className="bg-[#F1F1F1]">
               {columns.map(column => (
-                <th key={column} className="border border-brown-200 px-4 py-4 text-lg md:text-xl font-normal">
+                <th key={column} className="border border-brown-200 px-1.5 py-3 text-[10px] font-normal leading-tight sm:text-xs md:px-2 md:text-sm lg:px-3 lg:text-base xl:text-lg">
                   {column}
                 </th>
               ))}
@@ -50,11 +50,11 @@ function RoughTable({ title, columns, rows }) {
           <tbody>
             {rows.map((row, rowIndex) => (
               <tr key={row[0]} className={rowIndex % 2 === 1 ? 'bg-[#F4F4F4]' : 'bg-white'}>
-                <td className="border border-brown-200 px-4 py-4 text-lg md:text-xl">
+                <td className="border border-brown-200 px-1.5 py-3 text-xs md:px-2 md:text-base lg:px-3 lg:text-lg">
                   {row[0]}
                 </td>
                 {row.slice(1).map((hasStar, index) => (
-                  <td key={`${row[0]}-${index}`} className="border border-brown-200 px-4 py-4 text-2xl text-brown-700">
+                  <td key={`${row[0]}-${index}`} className="border border-brown-200 px-1.5 py-3 text-base text-brown-700 md:px-2 md:text-xl lg:px-3 lg:text-2xl">
                     {hasStar ? '★' : ''}
                   </td>
                 ))}
@@ -122,9 +122,9 @@ export default function ProductPage() {
     <div className="min-h-screen bg-cream">
       <Header />
 
-      <section className="bg-cream px-6 pt-28 pb-12 md:px-12 md:pt-36 md:pb-20 lg:px-24">
+      <section className="bg-cream px-6 pt-14 pb-12 md:px-12 md:pt-20 md:pb-20 lg:px-24">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-14">
-          <nav className="lg:sticky lg:top-28 lg:self-start lg:border-r lg:border-brown-200 lg:pr-8">
+          <nav className="border-b border-brown-200 pb-8 lg:sticky lg:top-28 lg:self-start lg:border-b-0 lg:border-r lg:border-brown-200 lg:pb-0 lg:pr-8">
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
             {productTabs.map(tab => (
               <button
@@ -137,7 +137,12 @@ export default function ProductPage() {
                     : 'text-brown-600 hover:bg-brown-100 hover:text-brown-900'
                 }`}
               >
-                {tab.label}
+                <span className="flex items-center gap-3">
+                  <span className="text-[10px] leading-none">
+                    {activeTab === tab.id ? '▼' : '▶'}
+                  </span>
+                  <span>{tab.label}</span>
+                </span>
               </button>
             ))}
             </div>

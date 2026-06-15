@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import ContactCta from '../components/ContactCta'
@@ -15,6 +16,68 @@ const productionImages = [
   'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51403.webp',
   'https://imgluodiye.kaytkrelated.ccwu.cc/dulimulu/51401.webp',
 ]
+
+function StandardsCarousel() {
+  const [activeIndex, setActiveIndex] = useState(0)
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setActiveIndex(index => (index + 1) % ethosImages.length)
+    }, 4200)
+
+    return () => window.clearInterval(timer)
+  }, [])
+
+  return (
+    <>
+      <div className="mx-auto max-w-xl md:hidden">
+        <div className="overflow-hidden rounded-sm bg-brown-100">
+          <div
+            className="flex transition-transform duration-700 ease-in-out"
+            style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+          >
+            {ethosImages.map((src, index) => (
+              <div key={src} className="w-full flex-none">
+                <img
+                  src={src}
+                  alt={`Our Standards ${index + 1}`}
+                  className="aspect-[700/858] w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="mt-5 flex justify-center gap-2">
+          {ethosImages.map((src, index) => (
+            <button
+              key={src}
+              type="button"
+              aria-label={`Show standard ${index + 1}`}
+              onClick={() => setActiveIndex(index)}
+              className={`h-2.5 w-2.5 rounded-full transition-colors duration-300 ${
+                activeIndex === index ? 'bg-brown-900' : 'bg-brown-300'
+              }`}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="mx-auto hidden max-w-5xl grid-cols-2 gap-5 md:grid">
+        {ethosImages.map((src, index) => (
+          <div key={src} className="overflow-hidden rounded-sm bg-brown-100">
+            <img
+              src={src}
+              alt={`Our Standards ${index + 1}`}
+              className="aspect-[700/858] w-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
+    </>
+  )
+}
 
 export default function AboutPage() {
   return (
@@ -40,7 +103,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story */}
-      <section className="px-6 md:px-12 lg:px-24 py-16 md:py-24 border-b border-brown-200">
+      <section className="border-t border-b border-brown-200 px-6 md:px-12 lg:px-24 py-16 md:py-24">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading-serif text-3xl md:text-4xl text-brown-900 mb-6">{t('about.storyTitle')}</h2>
           <div className="space-y-4 text-brown-600 text-sm md:text-base leading-relaxed">
@@ -65,7 +128,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Values */}
-      <section className="px-6 md:px-12 lg:px-24 py-16 md:py-24 border-b border-brown-200">
+      <section className="bg-cream-dark px-6 md:px-12 lg:px-24 py-16 md:py-24 border-b border-brown-200">
         <div className="max-w-6xl mx-auto">
           <h2 className="heading-serif text-3xl md:text-4xl text-brown-900 mb-12 text-center">{t('about.valuesTitle')}</h2>
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -93,31 +156,20 @@ export default function AboutPage() {
 
       <section className="px-6 md:px-12 lg:px-24 py-16 md:py-24 border-b border-brown-200">
         <div className="max-w-6xl mx-auto">
-          <h2 className="heading-serif text-3xl md:text-4xl text-brown-900 mb-12 text-center">Why Choose Us</h2>
-          <div className="-mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 md:mx-auto md:grid md:max-w-5xl md:grid-cols-2 md:overflow-visible md:px-0">
-            {ethosImages.map((src, index) => (
-              <div key={src} className="w-[78%] flex-none snap-center overflow-hidden rounded-sm bg-brown-100 sm:w-[46%] md:w-auto">
-                <img
-                  src={src}
-                  alt={`Why Choose Us ${index + 1}`}
-                  className="aspect-[700/858] w-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
+          <h2 className="heading-serif text-3xl md:text-4xl text-brown-900 mb-12 text-center">Our Standards</h2>
+          <StandardsCarousel />
         </div>
       </section>
 
       {/* Visit Us / Contact */}
       <section id="visit-us" className="px-6 md:px-12 lg:px-24 py-16 md:py-24 border-b border-brown-200 scroll-mt-24">
         <div className="max-w-6xl mx-auto">
-          <h2 className="heading-serif text-3xl md:text-4xl text-brown-900 mb-12 text-center">In-house Production</h2>
+          <h2 className="heading-serif text-3xl md:text-4xl text-brown-900 mb-12 text-center">In-House Production</h2>
           <div className="grid gap-4 md:grid-cols-[1.15fr_0.85fr] md:gap-6">
             <div className="overflow-hidden rounded-sm bg-brown-100">
               <img
                 src={productionImages[0]}
-                alt="In-house Production 1"
+                alt="In-House Production 1"
                 className="aspect-[4/3] w-full object-cover md:h-full md:min-h-[460px]"
                 loading="lazy"
               />
@@ -128,7 +180,7 @@ export default function AboutPage() {
                 <div key={src} className="overflow-hidden rounded-sm bg-brown-100">
                   <img
                     src={src}
-                    alt={`In-house Production ${index + 2}`}
+                    alt={`In-House Production ${index + 2}`}
                     className="aspect-[4/3] w-full object-cover md:aspect-[3/2]"
                     loading="lazy"
                   />

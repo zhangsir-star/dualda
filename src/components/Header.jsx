@@ -7,6 +7,7 @@ export default function Header() {
   const [language, setLanguage] = useState(getCurrentLanguage())
   const [languageOpen, setLanguageOpen] = useState(false)
   const mobileMenuRef = useRef(null)
+  const isHomePage = window.location.pathname === '/'
 
   useEffect(() => {
     if (!menuOpen) return
@@ -97,7 +98,16 @@ export default function Header() {
               {t('site.brand')}
             </a>
 
-            {languageSelector('px-1.5 py-1 text-[10px] tracking-wide', 12, 10)}
+            {isHomePage ? (
+              languageSelector('px-1.5 py-1 text-[10px] tracking-wide', 12, 10)
+            ) : (
+              <a
+                href="/about"
+                className="text-sm tracking-wider text-brown-900 underline underline-offset-1 decoration-1"
+              >
+                {t('nav.about')}
+              </a>
+            )}
           </div>
 
           {/* Mobile Menu */}
@@ -107,7 +117,6 @@ export default function Header() {
               <a href="/rings" className="block py-2 text-sm tracking-wider">{t('nav.rings')}</a>
               <a href="/earrings" className="block py-2 text-sm tracking-wider">{t('nav.earrings')}</a>
               <a href="/bracelets" className="block py-2 text-sm tracking-wider">{t('nav.bracelets')}</a>
-              <a href="/about" className="block py-2 text-sm tracking-wider">{t('nav.about')}</a>
             </nav>
           )}
         </div>

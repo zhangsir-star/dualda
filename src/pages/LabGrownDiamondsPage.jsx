@@ -34,9 +34,9 @@ export default function LabGrownDiamondsPage() {
 
           <div className="overflow-hidden rounded-sm bg-brown-100 lg:sticky lg:top-28">
             <img
-              src="https://img.aldajewelry.com/dulimulu/51604.webp"
+              src="https://img.aldajewelry.com/dulimulu/61608.webp"
               alt="Lab-grown diamond jewelry"
-              className="aspect-[4/3] w-full object-cover lg:aspect-[4/5]"
+              className="w-full lg:aspect-[4/5] lg:object-cover"
             />
           </div>
         </div>
