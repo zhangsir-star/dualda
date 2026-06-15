@@ -23,7 +23,24 @@
   },
   "home": {
     "styledOnModel": "Styled On Model",
-    "testimonialsTitle": "Acclaim from countless bespoke clients"
+    "testimonialsTitle": "Acclaim from countless bespoke clients",
+    "confidence": {
+      "title": "Choose Brilliantly",
+      "guidance": "One-to-one guidance from jewelry specialists",
+      "customCraft": "Made-to-order lab diamond pieces with refined finishing",
+      "qualityCare": "Strict quality checks and attentive after-care support",
+      "responsibleProduction": "Responsible in-house production from lab-grown diamonds"
+    },
+    "labStory": {
+      "eyebrow": "Alda Approach",
+      "craftTitle": "Why choose Alda",
+      "craftDescription": "We aim to further strengthen the industrial chain and build a fully integrated jewelry ecosystem covering lab-grown diamond production, cutting and polishing, setting, jewelry manufacturing, and market promotion.",
+      "craftCta": "About Alda",
+      "sourceEyebrow": "Lab-Grown Diamonds",
+      "sourceTitle": "Why Lab Grown Diamonds",
+      "sourceDescription": "Lab-grown diamonds make exceptional brilliance more accessible, offering the same refined beauty with better value than mined diamonds, so clients can choose larger, higher-quality stones at a more reasonable cost.",
+      "sourceCta": "About Lab Grown Diamonds"
+    }
   },
   "collection": {
     "rings": {
@@ -67,7 +84,17 @@
   },
   "cta": {
     "email": "sales@aldajewelry.com",
-    "emailDescription": "For more product catalogs, please contact us by email."
+    "emailDescription": "For partnership inquiries, please contact us by email."
+  },
+  "labGrownDiamonds": {
+    "eyebrow": "Lab-Grown Diamonds",
+    "title": "Brilliance with Better Value",
+    "intro": "Lab-grown diamonds are real diamonds grown through advanced technology rather than mined from the earth. They offer the same lasting sparkle and refined look, while giving clients more freedom to choose size, quality, and design within a more reasonable budget.",
+    "valueTitle": "Why choose lab-grown diamonds?",
+    "valueDescription": "For custom jewelry, lab-grown diamonds make it easier to balance beauty, quality, and price. Clients can often select a larger or higher-grade stone compared with mined diamonds at the same budget, while still enjoying the elegance expected from fine jewelry.",
+    "benefitValue": "Better value than mined diamonds",
+    "benefitBeauty": "Same refined diamond beauty",
+    "benefitCustom": "More flexibility for custom designs"
   },
   "footer": {
     "communityTitle": "Join the Alda Community",
@@ -77,7 +104,7 @@
     "catalog": "CATALOG",
     "company": "Company",
     "ourStory": "Our Story",
-    "copyright": "© 2018 Alda. All rights reserved.",
+    "copyright": "© 2026 Alda Jewelry. All rights reserved.",
     "popupSuccess": "You have been subscribed",
     "popupInvalid": "Re-enter your email"
   },

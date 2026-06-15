@@ -6,6 +6,7 @@ import BraceletsPage from './pages/BraceletsPage'
 import NecklacesPage from './pages/NecklacesPage'
 import AboutPage from './pages/AboutPage'
 import ProductPage from './pages/ProductPage'
+import LabGrownDiamondsPage from './pages/LabGrownDiamondsPage'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/necklaces" element={<NecklacesPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/product" element={<ProductPage />} />
+        <Route path="/lab-grown-diamonds" element={<LabGrownDiamondsPage />} />
       </Routes>
     </Router>
   )

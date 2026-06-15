@@ -8,8 +8,8 @@ import { t } from '../i18n'
 const productTabs = [
   { id: 'rough', label: t('product.tabs.rough') },
   { id: 'loose', label: t('product.tabs.loose') },
-  { id: 'earrings', label: t('product.tabs.earrings') },
   { id: 'rings', label: t('product.tabs.rings') },
+  { id: 'earrings', label: t('product.tabs.earrings') },
   { id: 'necklace', label: t('product.tabs.necklace') },
   { id: 'bracelets', label: t('product.tabs.bracelets') },
 ]
@@ -76,13 +76,13 @@ function LooseDiamondVideo() {
   }, [])
 
   return (
-    <div className="relative overflow-hidden bg-white min-h-[320px] md:min-h-[520px]">
+    <div className="relative mx-auto aspect-video max-w-3xl overflow-hidden bg-white">
       {!videoReady && (
         <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-cream-dark via-white to-cream-dark" />
       )}
       <video
         src="https://img.aldajewelry.com/dulimulu/compressed-527lossdiamond.mp4"
-        className={`h-full min-h-[320px] md:min-h-[520px] w-full object-cover transition-opacity duration-700 ${
+        className={`h-full w-full object-contain transition-opacity duration-700 ${
           videoReady ? 'opacity-100' : 'opacity-0'
         }`}
         autoPlay

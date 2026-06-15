@@ -112,12 +112,6 @@ export default function Header() {
           )}
         </div>
       </header>
-      <a
-        href="/about"
-        className="block bg-[#D8DAB8] px-6 py-2 text-center text-xl md:text-2xl font-normal text-black underline"
-      >
-        {t('nav.manufacturingCapabilities')}
-      </a>
     </>
   )
 }
