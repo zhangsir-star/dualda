@@ -6,12 +6,12 @@ import { bracelets, earrings, necklaces, rings } from '../data'
 import { t } from '../i18n'
 
 const productTabs = [
-  t('product.tabs.rough'),
-  t('product.tabs.loose'),
-  t('product.tabs.earrings'),
-  t('product.tabs.rings'),
-  t('product.tabs.necklace'),
-  t('product.tabs.bracelets'),
+  { id: 'rough', label: t('product.tabs.rough') },
+  { id: 'loose', label: t('product.tabs.loose') },
+  { id: 'earrings', label: t('product.tabs.earrings') },
+  { id: 'rings', label: t('product.tabs.rings') },
+  { id: 'necklace', label: t('product.tabs.necklace') },
+  { id: 'bracelets', label: t('product.tabs.bracelets') },
 ]
 
 const llbColumns = [t('product.rough.gradeCarats'), '1-1.5', '1.5-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-10', '10-12', '12-15']
@@ -115,51 +115,50 @@ function ProductImageGrid({ products }) {
 }
 
 export default function ProductPage() {
-  const [activeTab, setActiveTab] = useState(productTabs[0])
+  const [activeTab, setActiveTab] = useState(productTabs[0].id)
+  const activeTabLabel = productTabs.find(tab => tab.id === activeTab)?.label
 
   return (
     <div className="min-h-screen bg-cream">
       <Header />
-      <section className="bg-gradient-to-b from-cream-dark to-cream pt-24 pb-16 md:pt-32 md:pb-24 px-6 md:px-12 lg:px-24">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="heading-serif text-4xl md:text-6xl lg:text-7xl text-brown-900 leading-tight mb-4">
-            {t('product.title')}
-          </h1>
-          <p className="text-lg md:text-xl text-brown-600 font-light max-w-2xl mx-auto">
-            {t('product.description')}
-          </p>
-        </div>
-      </section>
 
-      <section className="bg-cream px-6 md:px-12 lg:px-24 py-10 md:py-20">
-        <div className="max-w-7xl mx-auto">
-          <nav className="sticky top-[56px] z-40 mb-10 grid grid-cols-2 gap-x-8 gap-y-5 border-b border-brown-200 bg-cream py-4 text-left md:gap-x-14 md:gap-y-6 md:py-5">
+      <section className="bg-cream px-6 pt-28 pb-12 md:px-12 md:pt-36 md:pb-20 lg:px-24">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-14">
+          <nav className="lg:sticky lg:top-28 lg:self-start lg:border-r lg:border-brown-200 lg:pr-8">
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
             {productTabs.map(tab => (
               <button
-                key={tab}
+                key={tab.id}
                 type="button"
-                onClick={() => setActiveTab(tab)}
-                className={`text-left text-xs md:text-base font-medium tracking-wide uppercase ${
-                  activeTab === tab ? 'text-[#BABD8A]' : 'text-brown-900'
+                onClick={() => setActiveTab(tab.id)}
+                className={`rounded-sm px-5 py-4 text-left text-sm font-medium uppercase tracking-wide transition-colors duration-300 md:text-base ${
+                  activeTab === tab.id
+                    ? 'bg-[#EEF1EA] text-brown-900'
+                    : 'text-brown-600 hover:bg-brown-100 hover:text-brown-900'
                 }`}
               >
-                {tab}
+                {tab.label}
               </button>
             ))}
+            </div>
           </nav>
 
           <div className="min-h-[320px]">
-            {activeTab === t('product.tabs.rough') && (
+            <h1 className="heading-serif mb-8 text-4xl leading-tight text-brown-900 md:text-5xl">
+              {activeTabLabel}
+            </h1>
+
+            {activeTab === 'rough' && (
               <div className="text-brown-700">
                 <RoughTable title={t('product.rough.llbTitle')} columns={llbColumns} rows={llbRows} />
                 <RoughTable title={t('product.rough.llsTitle')} columns={llsColumns} rows={llsRows} />
               </div>
             )}
-            {activeTab === t('product.tabs.loose') && <LooseDiamondVideo />}
-            {activeTab === t('product.tabs.earrings') && <ProductImageGrid products={earrings} />}
-            {activeTab === t('product.tabs.rings') && <ProductImageGrid products={rings} />}
-            {activeTab === t('product.tabs.necklace') && <ProductImageGrid products={necklaces} />}
-            {activeTab === t('product.tabs.bracelets') && <ProductImageGrid products={bracelets} />}
+            {activeTab === 'loose' && <LooseDiamondVideo />}
+            {activeTab === 'earrings' && <ProductImageGrid products={earrings} />}
+            {activeTab === 'rings' && <ProductImageGrid products={rings} />}
+            {activeTab === 'necklace' && <ProductImageGrid products={necklaces} />}
+            {activeTab === 'bracelets' && <ProductImageGrid products={bracelets} />}
           </div>
         </div>
       </section>
