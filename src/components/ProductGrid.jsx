@@ -6,7 +6,7 @@ export default function ProductGrid({ title = t('home.styledOnModel'), products 
   return (
     <section className="bg-cream pt-16 md:pt-24 pb-16 md:pb-24 px-6 md:px-12 lg:px-24">
       <div className="max-w-6xl mx-auto">
-        <h2 className="heading-serif text-3xl md:text-5xl text-left text-brown-900 mb-12">
+        <h2 className="heading-serif text-4xl md:text-5xl text-center text-brown-900 mb-12">
           {title}
         </h2>
       </div>

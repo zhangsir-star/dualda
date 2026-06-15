@@ -14,7 +14,7 @@ export default function Testimonials() {
             <Star key={i} size={20} fill="currentColor" className="text-gold-500" />
           ))}
         </div>
-        <h2 className="heading-serif text-3xl md:text-4xl text-brown-900">
+        <h2 className="heading-serif text-4xl md:text-5xl text-brown-900">
           {t('home.testimonialsTitle')}
         </h2>
       </div>
